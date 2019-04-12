@@ -1,0 +1,44 @@
+.instruments-content {
+  img {
+    width: 60%;
+    display: block;
+    margin: 40px auto;
+    max-width: 500px;
+    min-width: 290px;
+  }
+  // .right-img {
+  //   float: right;
+  // }
+  p {
+    width: 60%;
+    min-width: 290px;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .instruments-content {
+    .mobile-col {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .instruments-content {
+    .desktop-col {
+      display: none;
+    }
+    p {
+      margin-top: -40px;
+      margin-bottom: 100px;
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+}

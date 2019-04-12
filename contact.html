@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css" />
+    <link rel="stylesheet" href="css/app.css">
+    <title></title>
+  </head>
+  <body>
+    <!-- start page container -->
+    <div class="page-container">
+
+      <!-- start mobile nav -->
+      <nav class="mobile-nav-wrap" role="navigation">
+        <ul class="fixed-mobile-nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="reception.html">Reception</a>
+          </li>
+          <li>
+            <a href="price-list.html">Price List</a>
+          </li>
+          <li>
+            <a href="about.html">Our Team</a>
+          </li>
+          <li>
+            <a href="instruments.html">Instruments</a>
+          </li>
+          <li>
+            <a class="active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="language-mobile-menu">
+          <li>
+            <a class="active" href="#">EN</a>
+          </li>
+          <li>
+            <a href="#">ET</a>
+          </li>
+          <li>
+            <a href="#">FI</a>
+          </li>
+          <li>
+            <a href="#">RU</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-wrap">
+        <header>
+
+          <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+            <span class="menu-item"></span>
+            <span class="menu-item"></span>
+            <span class="menu-item"></span>
+         </a>
+
+        </header>
+
+
+
+      <!-- end mobile nav -->
+
+      <!-- start desktop navigation -->
+      <nav class="nav-desktop">
+        <!-- start top bar -->
+        <div class="top-bar">
+          <div class="row">
+            <div class="col-xs-6 left">
+              <!-- <ul>
+                <li>
+                  <a href="terms-and-conditions.html">
+                    Terms & Conditions
+                  </a>
+                </li>
+              </ul> -->
+            </div>
+            <div class="col-xs-6 right">
+              <ul>
+                <li>
+                  <a class="active" href="#">EN</a>
+                </li>
+                <li>
+                  <a href="#">ET</a>
+                </li>
+                <li>
+                  <a href="#">FI</a>
+                </li>
+                <li>
+                  <a href="#">RU</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end top bar -->
+
+        <!-- start main nav -->
+        <div class="main-nav">
+          <div class="row">
+            <div class="col-xs-3 left">
+              <a href="index.html">
+                <img src="img/logo.png" />
+              </a>
+            </div>
+            <div class="col-xs-9 right">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="reception.html">Reception</a>
+                </li>
+                <li>
+                  <a href="price-list.html">Price List</a>
+                </li>
+                <li>
+                  <a href="about.html">Our Team</a>
+                </li>
+                <li>
+                  <a href="instruments.html">Instruments</a>
+                </li>
+                <li>
+                  <a class="active" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end main nav -->
+      </nav>
+      <!-- end desktop navigation -->
+
+      <main>
+
+
+
+      <div class="reception-content">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <p>
+              Silmaarst Elle Lepik OÜ
+              <br>
+              Pikk Street 11
+              <br>
+              80013 Pärnu
+              <br>
+              Estonia
+              <br>
+              Tel: +372 4 467 003
+              <br>
+              Email: <a href="mailto:app@vregistry.com">app@vregistry.com</a>
+              <br>
+              <br>
+              <span class="bold">Commercial registry nr:</span> 11216335
+              <br>
+              <span class="bold">VAT identification nr:</span> EE101267690
+              <br>
+              <span class="bold">Account nr at SEB Bank:</span> 10220053651014
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091.4424215135828!2d24.501374551496692!3d58.38593978124713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ecfd22cef3c7a9%3A0x5dbf6ff336e531c4!2sPikk+11%2C+P%C3%A4rnu%2C+80013+P%C3%A4rnu+maakond%2C+Estonia!5e0!3m2!1sen!2stw!4v1555032919104!5m2!1sen!2stw" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- start footer -->
+      <footer class="right">
+        <p>
+          © All Rights Reserved. Silmaarst Elle Lepik OÜ
+        </p>
+      </footer>
+      <!-- end footer -->
+
+      </main>
+      <!-- end main -->
+
+      </div>
+      <!-- end page wrap -->
+
+    </div>
+    <!-- end page container -->
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous">
+    </script>
+
+    <script>
+      $('.js-toggle-menu').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('open');
+        $('.page-wrap').toggleClass('disabled');
+        $('body').toggleClass('disabled');
+      });
+    </script>
+  </body>
+</html>
