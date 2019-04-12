@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Avenir Light';
+  src: url("../fonts/avenir-light.woff"); }
+@font-face {
+  font-family: 'Avenir Black';
+  src: url("../fonts/avenir-black.woff"); }
+.top-bar {
+  background-color: #5b7fe8;
+  width: 100%;
+  height: 60px; }
+  .top-bar ul {
+    line-height: 60px;
+    list-style-type: none; }
+    .top-bar ul li {
+      margin: 0 15px;
+      display: inline-flex; }
+      .top-bar ul li a {
+        color: #fff;
+        transition: 0.2s; }
+        .top-bar ul li a.active {
+          font-family: "Avenir Black";
+          text-decoration: underline; }
+        .top-bar ul li a:hover {
+          text-decoration: underline;
+          transition: 0.2s; }
+  .top-bar .left ul {
+    margin-left: 25px; }
+  .top-bar .right ul {
+    margin-right: 25px; }
+
+.main-nav {
+  height: 120px;
+  line-height: 120px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #262626; }
+  .main-nav img {
+    width: 120px;
+    margin-left: 25px; }
+  .main-nav ul {
+    margin-right: 25px;
+    list-style-type: none; }
+    .main-nav ul li {
+      margin: 0 15px;
+      display: inline-flex; }
+      .main-nav ul li a {
+        color: #262626;
+        transition: 0.2s; }
+        .main-nav ul li a.active {
+          font-family: "Avenir Black";
+          color: #5b7fe8;
+          text-decoration: underline; }
+        .main-nav ul li a:hover {
+          color: #5b7fe8;
+          text-decoration: underline;
+          transition: 0.2s; }
+
+.hero {
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/hero-bg.jpeg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/hero-bg.jpeg");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/hero-bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 75vh;
+  min-height: 500px; }
+  .hero h1 {
+    font-size: 80px;
+    margin-top: 80px; }
+  .hero p {
+    font-size: 25px;
+    margin-top: -40px; }
+  .hero a {
+    color: #fff;
+    font-family: "Avenir Black";
+    text-transform: uppercase;
+    display: block;
+    width: 290px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 10px;
+    background-color: #5b7fe8;
+    text-align: center;
+    font-size: 18px; }
+
+.home-content {
+  height: auto;
+  min-height: 420px; }
+  .home-content .col-sm-6 {
+    min-height: 420px; }
+  .home-content .text-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%); }
+  .home-content p {
+    font-size: 20px; }
+  .home-content ul {
+    margin-left: 25px; }
+    .home-content ul li {
+      line-height: 1.5;
+      font-size: 18px; }
+
+footer {
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background-color: #5b7fe8;
+  margin-top: -15px; }
+  footer p {
+    color: #fff;
+    margin-right: 25px; }
+
+body {
+  font-family: "Avenir Light";
+  padding: 0;
+  margin: 0;
+  color: #262626; }
+
+h1 {
+  font-family: "Avenir Black"; }
+
+.page-container {
+  width: 100vw;
+  overflow: hidden; }
+
+.bold {
+  font-family: "Avenir Black"; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.center {
+  text-align: center; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=app.css.map */

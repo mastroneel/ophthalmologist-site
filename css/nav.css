@@ -1,0 +1,52 @@
+.top-bar {
+  background-color: #5b7fe8;
+  width: 100%;
+  height: 60px; }
+  .top-bar ul {
+    line-height: 60px;
+    list-style-type: none; }
+    .top-bar ul li {
+      margin: 0 15px;
+      display: inline-flex; }
+      .top-bar ul li a {
+        color: #fff;
+        transition: 0.2s; }
+        .top-bar ul li a.active {
+          font-family: "Avenir Black";
+          text-decoration: underline; }
+        .top-bar ul li a:hover {
+          text-decoration: underline;
+          transition: 0.2s; }
+  .top-bar .left ul {
+    margin-left: 25px; }
+  .top-bar .right ul {
+    margin-right: 25px; }
+
+.main-nav {
+  height: 120px;
+  line-height: 120px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #262626; }
+  .main-nav img {
+    width: 120px;
+    margin-left: 25px; }
+  .main-nav ul {
+    margin-right: 25px;
+    list-style-type: none; }
+    .main-nav ul li {
+      margin: 0 15px;
+      display: inline-flex; }
+      .main-nav ul li a {
+        color: #262626;
+        transition: 0.2s; }
+        .main-nav ul li a.active {
+          font-family: "Avenir Black";
+          color: #5b7fe8;
+          text-decoration: underline; }
+        .main-nav ul li a:hover {
+          color: #5b7fe8;
+          text-decoration: underline;
+          transition: 0.2s; }
+
+/*# sourceMappingURL=nav.css.map */

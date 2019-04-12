@@ -1,0 +1,61 @@
+// import fonts
+@font-face {
+  font-family: 'Avenir Light';
+  src: url('../fonts/avenir-light.woff');
+}
+
+@font-face {
+  font-family: 'Avenir Black';
+  src: url('../fonts/avenir-black.woff');
+}
+
+
+
+// import files
+@import 'variables';
+@import 'nav';
+@import 'hero';
+@import 'home-content';
+@import 'footer';
+
+// general styles
+body {
+  font-family: $main-font;
+  padding: 0;
+  margin: 0;
+  color: $gray;
+}
+
+h1 {
+  font-family: $bold-font;
+}
+
+.page-container {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.bold {
+  font-family: $bold-font;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
