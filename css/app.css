@@ -4,6 +4,98 @@
 @font-face {
   font-family: 'Avenir Black';
   src: url("../fonts/avenir-black.woff"); }
+body.disabled {
+  overflow: hidden; }
+
+.page-wrap {
+  background-color: white;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2; }
+  .page-wrap.disabled {
+    left: calc(100% - 80px); }
+
+header {
+  height: 80px;
+  position: relative;
+  background-color: #5b7fe8; }
+
+.hamburger-menu {
+  display: inline-block;
+  height: 100px;
+  padding: 25px 25px;
+  transition: all 0.3s ease-in-out; }
+  .hamburger-menu:hover {
+    cursor: pointer; }
+  .hamburger-menu .menu-item {
+    background: #fff;
+    display: block;
+    height: 3px;
+    margin: 0 0 10px;
+    transition: all 0.3s ease-in-out;
+    width: 40px; }
+  .hamburger-menu.open .menu-item {
+    margin: 0 0 5px; }
+    .hamburger-menu.open .menu-item:first-child {
+      transform: rotate(45deg);
+      transform-origin: 10px; }
+    .hamburger-menu.open .menu-item:nth-child(2) {
+      opacity: 0; }
+    .hamburger-menu.open .menu-item:nth-child(3) {
+      transform: rotate(-45deg);
+      transform-origin: 8px; }
+
+@media (min-width: 769px) {
+  .mobile-nav-wrap {
+    /* display: none; */ } }
+
+.mobile-nav-wrap {
+  background-color: #5b7fe8;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+  .mobile-nav-wrap .language-mobile-menu {
+    margin: 20px auto;
+    width: 290px; }
+    .mobile-nav-wrap .language-mobile-menu li {
+      display: inline-flex;
+      margin: 0 10px; }
+      .mobile-nav-wrap .language-mobile-menu li a {
+        color: white;
+        display: block;
+        font-size: 20px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: "Avenir Light"; }
+        .mobile-nav-wrap .language-mobile-menu li a.active {
+          text-decoration: underline;
+          font-family: "Avenir Black"; }
+  .mobile-nav-wrap .fixed-mobile-nav {
+    list-style: none;
+    margin: 50px 0 0;
+    padding: 0; }
+    .mobile-nav-wrap .fixed-mobile-nav li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      margin-left: 50px;
+      width: 50%; }
+      .mobile-nav-wrap .fixed-mobile-nav li a {
+        color: white;
+        display: block;
+        font-size: 20px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: "Avenir Light"; }
+        .mobile-nav-wrap .fixed-mobile-nav li a.active {
+          text-decoration: underline;
+          font-family: "Avenir Black"; }
+
 .top-bar {
   background-color: #5b7fe8;
   width: 100%;
@@ -55,6 +147,25 @@
           text-decoration: underline;
           transition: 0.2s; }
 
+@media (max-width: 850px) {
+  .main-nav ul li {
+    margin: 0 10px; } }
+@media (min-width: 768px) {
+  header, .mobile-nav-wrap {
+    display: none; } }
+@media (max-width: 767px) {
+  .top-bar, .main-nav {
+    display: none; } }
+@media (min-width: 1800px) {
+  .top-bar ul li, .main-nav ul li {
+    margin: 0 25px; }
+    .top-bar ul li a, .main-nav ul li a {
+      font-size: 22px; } }
+@media (min-width: 2300px) {
+  .top-bar ul li, .main-nav ul li {
+    margin: 0 35px; }
+    .top-bar ul li a, .main-nav ul li a {
+      font-size: 25px; } }
 .hero {
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/hero-bg.jpeg");
   background: -o-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/hero-bg.jpeg");
@@ -83,6 +194,36 @@
     text-align: center;
     font-size: 18px; }
 
+@media (max-width: 767px) {
+  .hero {
+    text-align: center; }
+    .hero a {
+      margin: 20px auto; } }
+@media (min-width: 1800px) {
+  .hero h1 {
+    font-size: 100px; }
+  .hero p {
+    font-size: 30px; }
+  .hero a {
+    font-size: 22px;
+    width: 350px; } }
+@media (min-width: 2300px) {
+  .hero h1 {
+    font-size: 120px; }
+  .hero p {
+    font-size: 32px;
+    margin-top: -80px; }
+  .hero a {
+    font-size: 25px;
+    width: 420px;
+    height: 80px;
+    line-height: 85px; } }
+@media (min-height: 1000px) {
+  .hero h1 {
+    margin-top: 150px; } }
+@media (min-height: 1200px) {
+  .hero h1 {
+    margin-top: 220px; } }
 .home-content {
   height: auto;
   min-height: 420px; }
@@ -90,6 +231,7 @@
     min-height: 420px; }
   .home-content .text-container {
     width: 80%;
+    min-width: 290px;
     margin: 0 auto;
     position: relative;
     top: 40%;
@@ -102,6 +244,24 @@
       line-height: 1.5;
       font-size: 18px; }
 
+@media (min-width: 1800px) {
+  .home-content {
+    min-height: 600px; }
+    .home-content .col-sm-6 {
+      min-height: 600px; }
+    .home-content p {
+      font-size: 25px; }
+    .home-content ul li {
+      font-size: 25px; } }
+@media (min-width: 2300px) {
+  .home-content {
+    min-height: 700px; }
+    .home-content .col-sm-6 {
+      min-height: 700px; }
+    .home-content p {
+      font-size: 28px; }
+    .home-content ul li {
+      font-size: 28px; } }
 footer {
   height: 60px;
   line-height: 60px;
@@ -112,6 +272,120 @@ footer {
     color: #fff;
     margin-right: 25px; }
 
+.reception-content {
+  height: auto;
+  min-height: 550px; }
+  .reception-content .col-sm-6 {
+    min-height: 550px; }
+  .reception-content p {
+    width: 80%;
+    min-width: 290px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+    font-size: 18px; }
+    .reception-content p a {
+      font-family: "Avenir Black";
+      color: #5b7fe8;
+      text-decoration: underline; }
+
+@media (max-width: 767px) {
+  .reception-content p {
+    padding: 60px 0; } }
+@media (min-height: 800px) {
+  .reception-content {
+    min-height: 80vh; }
+    .reception-content .col-sm-6 {
+      min-height: 80vh; }
+    .reception-content p {
+      font-size: 20px; } }
+@media (min-width: 1800px) {
+  .reception-content p {
+    font-size: 20px; } }
+@media (min-width: 2300px) {
+  .reception-content p {
+    font-size: 25px; } }
+.price-list-content {
+  height: 70vh;
+  min-height: 500px; }
+  .price-list-content .col-xs-12 {
+    min-height: 500px; }
+  .price-list-content p {
+    width: 80%;
+    min-width: 290px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+    font-size: 20px; }
+
+@media (min-height: 1000px) {
+  .price-list-content {
+    height: 75vh; }
+    .price-list-content .col-xs-12 {
+      height: 75vh; } }
+@media (min-height: 1200px) {
+  .price-list-content {
+    height: 80vh; }
+    .price-list-content .col-xs-12 {
+      height: 80vh; } }
+@media (min-width: 1800px) {
+  .price-list-content p {
+    font-size: 25px; } }
+@media (min-width: 2300px) {
+  .price-list-content p {
+    font-size: 30px; } }
+.about-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto; }
+  .about-content .col-xs-12, .about-content .col-sm-6 {
+    padding: 0;
+    margin: 0; }
+  .about-content .image-box {
+    min-height: 30vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .about-content .image-box-1 {
+    background-image: url("../img/doctor-2.jpg"); }
+  .about-content .image-box-2 {
+    background-image: url("../img/doctor-3.jpg"); }
+  .about-content .image-box-3 {
+    background-image: url("../img/doctor-1.jpg"); }
+  .about-content .image-box-4 {
+    background-image: url("../img/woman-1.jpg"); }
+  .about-content p {
+    width: 80%;
+    min-width: 290px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px; }
+
+@media (min-width: 768px) {
+  .about-content .mobile-col {
+    display: none; } }
+@media (min-width: 768px) and (max-width: 1000px) {
+  .about-content p {
+    font-size: 16px; } }
+@media (max-width: 767px) {
+  .about-content .desktop-col {
+    display: none; }
+  .about-content .image-box {
+    min-height: 400px; }
+  .about-content p {
+    padding: 80px 0 100px 0; } }
+@media (min-width: 1800px) {
+  .about-content p {
+    font-size: 20px; } }
+@media (min-width: 2300px) {
+  .about-content {
+    max-width: 1600px; }
+    .about-content p {
+      font-size: 25px; } }
 body {
   font-family: "Avenir Light";
   padding: 0;

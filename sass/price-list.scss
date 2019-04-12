@@ -1,0 +1,50 @@
+.price-list-content {
+  height: 70vh;
+  min-height: 500px;
+  .col-xs-12 {
+    min-height: 500px;
+  }
+  p {
+    width: 80%;
+    min-width: 290px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+    font-size: 20px;
+  }
+}
+
+@media (min-height: 1000px) {
+  .price-list-content {
+    height: 75vh;
+    .col-xs-12 {
+      height: 75vh;
+    }
+  }
+}
+
+@media (min-height: 1200px) {
+  .price-list-content {
+    height: 80vh;
+    .col-xs-12 {
+      height: 80vh;
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .price-list-content {
+    p {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (min-width: 2300px) {
+  .price-list-content {
+    p {
+      font-size: 30px;
+    }
+  }
+}

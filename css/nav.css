@@ -1,3 +1,95 @@
+body.disabled {
+  overflow: hidden; }
+
+.page-wrap {
+  background-color: white;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2; }
+  .page-wrap.disabled {
+    left: calc(100% - 80px); }
+
+header {
+  height: 80px;
+  position: relative;
+  background-color: #5b7fe8; }
+
+.hamburger-menu {
+  display: inline-block;
+  height: 100px;
+  padding: 25px 25px;
+  transition: all 0.3s ease-in-out; }
+  .hamburger-menu:hover {
+    cursor: pointer; }
+  .hamburger-menu .menu-item {
+    background: #fff;
+    display: block;
+    height: 3px;
+    margin: 0 0 10px;
+    transition: all 0.3s ease-in-out;
+    width: 40px; }
+  .hamburger-menu.open .menu-item {
+    margin: 0 0 5px; }
+    .hamburger-menu.open .menu-item:first-child {
+      transform: rotate(45deg);
+      transform-origin: 10px; }
+    .hamburger-menu.open .menu-item:nth-child(2) {
+      opacity: 0; }
+    .hamburger-menu.open .menu-item:nth-child(3) {
+      transform: rotate(-45deg);
+      transform-origin: 8px; }
+
+@media (min-width: 769px) {
+  .mobile-nav-wrap {
+    /* display: none; */ } }
+
+.mobile-nav-wrap {
+  background-color: #5b7fe8;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+  .mobile-nav-wrap .language-mobile-menu {
+    margin: 20px auto;
+    width: 290px; }
+    .mobile-nav-wrap .language-mobile-menu li {
+      display: inline-flex;
+      margin: 0 10px; }
+      .mobile-nav-wrap .language-mobile-menu li a {
+        color: white;
+        display: block;
+        font-size: 20px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: "Avenir Light"; }
+        .mobile-nav-wrap .language-mobile-menu li a.active {
+          text-decoration: underline;
+          font-family: "Avenir Black"; }
+  .mobile-nav-wrap .fixed-mobile-nav {
+    list-style: none;
+    margin: 50px 0 0;
+    padding: 0; }
+    .mobile-nav-wrap .fixed-mobile-nav li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      margin-left: 50px;
+      width: 50%; }
+      .mobile-nav-wrap .fixed-mobile-nav li a {
+        color: white;
+        display: block;
+        font-size: 20px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: "Avenir Light"; }
+        .mobile-nav-wrap .fixed-mobile-nav li a.active {
+          text-decoration: underline;
+          font-family: "Avenir Black"; }
+
 .top-bar {
   background-color: #5b7fe8;
   width: 100%;
@@ -48,5 +140,25 @@
           color: #5b7fe8;
           text-decoration: underline;
           transition: 0.2s; }
+
+@media (max-width: 850px) {
+  .main-nav ul li {
+    margin: 0 10px; } }
+@media (min-width: 768px) {
+  header, .mobile-nav-wrap {
+    display: none; } }
+@media (max-width: 767px) {
+  .top-bar, .main-nav {
+    display: none; } }
+@media (min-width: 1800px) {
+  .top-bar ul li, .main-nav ul li {
+    margin: 0 25px; }
+    .top-bar ul li a, .main-nav ul li a {
+      font-size: 22px; } }
+@media (min-width: 2300px) {
+  .top-bar ul li, .main-nav ul li {
+    margin: 0 35px; }
+    .top-bar ul li a, .main-nav ul li a {
+      font-size: 25px; } }
 
 /*# sourceMappingURL=nav.css.map */
