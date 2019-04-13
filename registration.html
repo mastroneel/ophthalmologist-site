@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css" />
+    <link rel="stylesheet" href="css/app.css">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="modal-container terms-modal-container">
+      <div class="modal">
+        <a class="close-button" href="#">x</a>
+        <p class="bold">Terms & Conditions</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, nobis porro modi, quod sint dignissimos facilis dolore. Asperiores temporibus labore dicta dolores, dolorum autem ratione harum beatae odit ab voluptatum!
+        </p>
+      </div>
+    </div>
+
+    <div class="modal-container help-modal-container">
+      <div class="modal">
+        <a class="close-button" href="#">x</a>
+        <p class="bold">Help</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, nobis porro modi, quod sint dignissimos facilis dolore. Asperiores temporibus labore dicta dolores, dolorum autem ratione harum beatae odit ab voluptatum!
+        </p>
+      </div>
+    </div>
+
+    <!-- start page container -->
+    <div class="page-container">
+
+      <!-- start mobile nav -->
+      <nav class="mobile-nav-wrap" role="navigation">
+        <ul class="fixed-mobile-nav accordion-menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li class="no-border">
+            <a href="reception.html">Reception</a>
+          </li>
+          <li class="sub-item">
+            <a class="active" href="registration.html"><span class="bullet">•</span> <span class="text">Registration</span></a>
+          </li>
+          <li>
+            <a href="price-list.html">Price List</a>
+          </li>
+          <li>
+            <a href="about.html">Our Team</a>
+          </li>
+          <li>
+            <a href="instruments.html">Instruments</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="language-mobile-menu">
+          <li>
+            <a href="#">ET</a>
+          </li>
+          <li>
+            <a href="#">FI</a>
+          </li>
+          <li>
+            <a href="#">RU</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-wrap">
+        <header>
+
+          <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+            <span class="menu-item"></span>
+            <span class="menu-item"></span>
+            <span class="menu-item"></span>
+         </a>
+
+        </header>
+
+
+
+      <!-- end mobile nav -->
+
+      <!-- start desktop navigation -->
+      <nav class="nav-desktop">
+        <!-- start top bar -->
+        <div class="top-bar">
+          <div class="row">
+            <div class="col-xs-6 left">
+              <ul>
+                <li>
+                  <a class="open-terms-modal" href="#">
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a class="open-help-modal" href="#">
+                    Help
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-6 right">
+              <ul>
+                <li>
+                  <a href="#">ET</a>
+                </li>
+                <li>
+                  <a href="#">FI</a>
+                </li>
+                <li>
+                  <a href="#">RU</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end top bar -->
+
+        <!-- start main nav -->
+        <div class="main-nav">
+          <div class="row">
+            <div class="col-xs-3 left">
+              <a href="index.html">
+                <img src="img/logo.png" />
+              </a>
+            </div>
+            <div class="col-xs-9 right">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown-toggle">
+                  <a class="active" href="reception.html">Reception</a>
+                </li>
+                <li>
+                  <a href="price-list.html">Price List</a>
+                </li>
+                <li>
+                  <a href="about.html">Our Team</a>
+                </li>
+                <li>
+                  <a  href="instruments.html">Instruments</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="active" href="registration.html">Registration</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end main nav -->
+      </nav>
+      <!-- end desktop navigation -->
+
+      <main>
+
+
+      <!-- start registration content -->
+      <div id="shell" style="
+    border:  1px solid #000;
+    height: auto;
+    min-height:  300px;
+    border-radius: 2px;
+"><div class="booking">
+  <div id="choice" class="choice">
+    <form id="booking">
+      <table class="change">
+        <tbody><tr>
+          <!-- <td class="hide"><input type="radio" name="peun:c1" id="staff" checked="checked"></td> -->
+          <td><label for="staff_id" id="l_staff_id">Doctor</label></td>
+          <td><select id="staff_id" name="staff_id:za!-10">
+
+
+            <option value="2">Dr. Main Person</option><option value="8">Dr. Elle Lepik</option><option value="" selected="selected"></option></select></td>
+        </tr>
+        <tr>
+          <!-- <td class="hide"><input type="radio" name="peun:c1" id="unit"></td> -->
+          <td><label for="unit_id" id="l_unit_id">Cabinet</label></td>
+          <td><select id="unit_id" name="unit_id:za!-10" disabled="">
+
+
+            <option value="" selected="selected"></option></select></td>
+        </tr>
+        <tr>
+          <!-- <td class="hide"></td> -->
+          <td><label for="month" id="l_month">Month</label></td>
+          <td><select id="month" name="month:c1!">
+              <option value="2019-04" selected="selected">April 2019</option>
+            </select></td>
+        </tr>
+      </tbody></table>
+    </form>
+    <div class="calendar" id="schedule"></div>
+  <div id="https:__dev.silmaarst.com:443_et_regn?" style="display: none;">%7B%22booking%22%3A%7B%22staff%22%3A%5Btrue%2Ctrue%5D%2C%22staff_id%22%3A%5B%22%22%2C%22%22%5D%2C%22unit%22%3A%5Bfalse%2Cfalse%5D%2C%22unit_id%22%3A%5B%22%22%2C%22%22%5D%2C%22month%22%3A%5B%222019-04%22%2C%222019-04%22%5D%7D%2C%22caledit%22%3A%7B%22id%22%3A%5B%22%22%2C%22%22%5D%2C%22stamp%22%3A%5B%22%22%2C%22%22%5D%2C%22client_id%22%3A%5B%22%22%2C%22%22%5D%2C%22contact_id%22%3A%5B%22%22%2C%22%22%5D%2C%22status_code%22%3A%5B%22book%22%2C%22book%22%5D%2C%22type%22%3A%5B%22priv%22%2C%22priv%22%5D%2C%22fname%22%3A%5B%22%22%2C%22%22%5D%2C%22lname%22%3A%5B%22%22%2C%22%22%5D%2C%22code%22%3A%5B%22%22%2C%22%22%5D%2C%22country_code%22%3A%5B%22%22%2C%22%22%5D%2C%22email%22%3A%5B%22%22%2C%22%22%5D%2C%22phone%22%3A%5B%22%22%2C%22%22%5D%2C%22note%22%3A%5B%22%22%2C%22%22%5D%7D%7D</div></div>
+  <div class="editing" id="editing">
+    <div class="prompt" id="prompt" style="padding-left: 5px; width: 275px; height: 78px;">Select the desired  doctor &amp; office and month of registration...</div>
+    <form class="caledit" id="caledit" style="display: none;">
+      <input type="hidden" id="id" name="id:za!-10" value="">
+      <input type="hidden" id="stamp" name="stamp:c1!" value="">
+      <input type="hidden" id="client_id" name="client_id:za!*-10" value="">
+      <input type="hidden" id="contact_id" name="contact_id:zb!-10" value="">
+      <input type="hidden" id="status_code" name="status_code:ca!*-15" value="book">
+      <input type="hidden" id="type" name="type:c1!" value="priv">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2"></th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th colspan="2"></th>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td><label for="fname" id="l_fname">First name</label></td>
+            <td><input type="text" id="fname" name="fname:cb!-20" value="" size="20" maxlength="20"></td>
+          </tr>
+          <tr>
+            <td><label for="lname" id="l_lname">Last name</label></td>
+            <td><input type="text" id="lname" name="lname:cb!-20" value="" size="20" maxlength="20"></td>
+          </tr>
+          <tr>
+            <td><label for="code" id="l_code">PIN code</label>
+              <img src="pub/pic/tip.gif" alt="" title="Your PIN code for Estonia (IK) or Finland (HETU); otherwise native ID or date of birth in the form YYMMDD"></td>
+            <td><input type="text" id="code" name="code:cb!*-15" value="" size="15" maxlength="15"></td>
+          </tr>
+          <tr>
+            <td><label for="country_code" id="l_country_code" style="font-style: italic;">Country</label>
+              <img src="pub/pic/tip.gif" alt="" title="Selected Country determines the Code format"></td>
+            <td><select id="country_code" name="country_code:cc*-2">
+                <option value="AU">Australia</option>
+<option value="CA">Canada</option>
+<option value="EE">Estonia</option>
+<option value="FI">Finland</option>
+<option value="DE">Germany</option>
+<option value="GB">Great Britain</option>
+<option value="LV">Latvia</option>
+<option value="LT">Lithuania</option>
+<option value="NO">Norway</option>
+<option value="PL">Poland</option>
+<option value="RU">Russia</option>
+<option value="SE">Sweden</option>
+<option value="US">United States</option>
+<option value="" selected="selected"></option>
+              </select></td>
+          </tr>
+          <tr>
+            <td><label for="email" id="l_email">Email</label>
+              <img src="pub/pic/tip.gif" alt="" title="Please, specify an acting address for further confirmation of your registration"></td>
+            <td><input type="text" id="email" name="email:cc!*-64" value="" size="30" maxlength="64"></td>
+          </tr>
+          <tr>
+            <td><label for="phone" id="l_phone">Phone</label>
+              <img src="pub/pic/tip.gif" alt="" title="Please without an area code if Country is specified; in case of the mobile number it will be used for SMS-notification"></td>
+            <td><input type="text" id="phone" name="phone:cc!*-15" value="" size="15" maxlength="15"></td>
+          </tr>
+          <tr>
+            <td><label for="note" id="l_note" style="font-style: italic;">Note</label></td>
+            <td><input type="text" id="note" name="note:ca*-65535" value="" size="30" maxlength="65535"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+  <div class="endFloat"></div>
+  <div class="comenu">
+    <div class="msgraw" id="msgraw"></div>
+    <ul class="command" id="command">
+              <li style="display: inline;"><button name="Q" type="button"><a href="calendar.html">Further</a></button></li>
+        <li style="display: none;"><button name="CC" type="button">Back</button></li>
+        <li style="display: none;"><button name="S" type="button">Register</button></li>
+          </ul>
+  </div>
+  <!-- <div class="hide" id="section">&nbsp;</div> -->
+  <!-- <div class="hide" id="action">&nbsp;&gt; null</div> -->
+</div>
+<div class="toolt" id="toolt">
+  <div class="sdat" id="sdat"></div>
+  <div class="stims" id="stims"></div>
+</div>
+<!-- <div id="options" class="hide">%7B%22ops%22%3A%7B%222019-04%22%3A%7B%22stf%22%3A%7B%222%22%3A%5B%221%22%5D%2C%228%22%3A%5B%222%22%5D%7D%2C%22uts%22%3A%7B%221%22%3A%5B%222%22%5D%2C%222%22%3A%5B%228%22%5D%7D%7D%7D%2C%22stf%22%3A%7B%222%22%3A%22Dr.+Main+Person%22%2C%228%22%3A%22Dr.+Elle+Lepik%22%7D%2C%22uts%22%3A%7B%221%22%3A%22test%22%2C%222%22%3A%22DeLange%22%7D%2C%22tps%22%3A%7B%22repd%22%3A%22Repeated%22%2C%22paid%22%3A%22Paid%22%7D%7D</div> -->
+</div>
+      <!-- end registration content -->
+
+      <!-- start footer -->
+      <footer class="right">
+        <p>
+          © All Rights Reserved. Silmaarst Elle Lepik OÜ
+        </p>
+      </footer>
+      <!-- end footer -->
+
+      </main>
+      <!-- end main -->
+
+      </div>
+      <!-- end page wrap -->
+
+    </div>
+    <!-- end page container -->
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous">
+    </script>
+
+    <script src="js/nav.js"></script>
+  </body>
+</html>

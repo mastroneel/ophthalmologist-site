@@ -128,13 +128,32 @@ header {
           font-family: $bold-font;
         }
       }
+      &.no-border {
+        border-bottom: none;
+      }
+      &.sub-item {
+        a {
+          font-size: 18px;
+          margin-left: 20px;
+          .bullet {
+            font-size: 12px;
+            padding-right: 5px;
+          }
+          &.active {
+            text-decoration: none;
+            .bullet {
+              text-decoration: none;
+            }
+            .text {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
     }
   }
 }
 
-main {
- // styles for main content
-}
 
 
 
@@ -214,6 +233,30 @@ main {
       }
     }
   }
+  .dropdown-menu {
+    margin-top: 20px;
+    background-color: $purple;
+    position: absolute;
+    right: 400px;
+    top: 120px;
+    width: 120px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    opacity: 0;
+    li {
+      a {
+        font-family: $bold-font;
+        color: $white;
+        &:hover {
+          color: $white;
+        }
+        &.active {
+          color: $white;
+        }
+      }
+    }
+  }
 }
 
 
@@ -225,6 +268,9 @@ main {
       li {
         margin: 0 10px;
       }
+    }
+    .dropdown-menu {
+      right: 355px;
     }
   }
 }
@@ -251,6 +297,10 @@ main {
         }
       }
     }
+    .dropdown-menu {
+      width: 200px;
+      right: 570px;
+    }
   }
 }
 
@@ -263,6 +313,10 @@ main {
           font-size: 25px;
         }
       }
+    }
+    .dropdown-menu {
+      width: 250px;
+      right: 690px;
     }
   }
 }

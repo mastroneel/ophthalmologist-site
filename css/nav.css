@@ -89,6 +89,20 @@ header {
         .mobile-nav-wrap .fixed-mobile-nav li a.active {
           text-decoration: underline;
           font-family: "Avenir Black"; }
+      .mobile-nav-wrap .fixed-mobile-nav li.no-border {
+        border-bottom: none; }
+      .mobile-nav-wrap .fixed-mobile-nav li.sub-item a {
+        font-size: 18px;
+        margin-left: 20px; }
+        .mobile-nav-wrap .fixed-mobile-nav li.sub-item a .bullet {
+          font-size: 12px;
+          padding-right: 5px; }
+        .mobile-nav-wrap .fixed-mobile-nav li.sub-item a.active {
+          text-decoration: none; }
+          .mobile-nav-wrap .fixed-mobile-nav li.sub-item a.active .bullet {
+            text-decoration: none; }
+          .mobile-nav-wrap .fixed-mobile-nav li.sub-item a.active .text {
+            text-decoration: underline; }
 
 .top-bar {
   background-color: #5b7fe8;
@@ -140,10 +154,30 @@ header {
           color: #5b7fe8;
           text-decoration: underline;
           transition: 0.2s; }
+  .main-nav .dropdown-menu {
+    margin-top: 20px;
+    background-color: #5b7fe8;
+    position: absolute;
+    right: 400px;
+    top: 120px;
+    width: 120px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    opacity: 0; }
+    .main-nav .dropdown-menu li a {
+      font-family: "Avenir Black";
+      color: #fff; }
+      .main-nav .dropdown-menu li a:hover {
+        color: #fff; }
+      .main-nav .dropdown-menu li a.active {
+        color: #fff; }
 
 @media (max-width: 850px) {
   .main-nav ul li {
-    margin: 0 10px; } }
+    margin: 0 10px; }
+  .main-nav .dropdown-menu {
+    right: 355px; } }
 @media (min-width: 768px) {
   header, .mobile-nav-wrap {
     display: none; } }
@@ -154,11 +188,17 @@ header {
   .top-bar ul li, .main-nav ul li {
     margin: 0 25px; }
     .top-bar ul li a, .main-nav ul li a {
-      font-size: 22px; } }
+      font-size: 22px; }
+  .top-bar .dropdown-menu, .main-nav .dropdown-menu {
+    width: 200px;
+    right: 570px; } }
 @media (min-width: 2300px) {
   .top-bar ul li, .main-nav ul li {
     margin: 0 35px; }
     .top-bar ul li a, .main-nav ul li a {
-      font-size: 25px; } }
+      font-size: 25px; }
+  .top-bar .dropdown-menu, .main-nav .dropdown-menu {
+    width: 250px;
+    right: 690px; } }
 
 /*# sourceMappingURL=nav.css.map */

@@ -8,17 +8,41 @@
     <title></title>
   </head>
   <body>
+
+    <div class="modal-container terms-modal-container">
+      <div class="modal">
+        <a class="close-button" href="#">x</a>
+        <p class="bold">Terms & Conditions</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, nobis porro modi, quod sint dignissimos facilis dolore. Asperiores temporibus labore dicta dolores, dolorum autem ratione harum beatae odit ab voluptatum!
+        </p>
+      </div>
+    </div>
+
+    <div class="modal-container help-modal-container">
+      <div class="modal">
+        <a class="close-button" href="#">x</a>
+        <p class="bold">Help</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, nobis porro modi, quod sint dignissimos facilis dolore. Asperiores temporibus labore dicta dolores, dolorum autem ratione harum beatae odit ab voluptatum!
+        </p>
+      </div>
+    </div>
+
     <!-- start page container -->
     <div class="page-container">
 
       <!-- start mobile nav -->
       <nav class="mobile-nav-wrap" role="navigation">
-        <ul class="fixed-mobile-nav">
+        <ul class="fixed-mobile-nav accordion-menu">
           <li>
             <a href="index.html">Home</a>
           </li>
-          <li>
+          <li class="no-border">
             <a href="reception.html">Reception</a>
+          </li>
+          <li class="sub-item">
+            <a href="registration.html"><span class="bullet">•</span> Registration</a>
           </li>
           <li>
             <a class="active" href="price-list.html">Price List</a>
@@ -33,10 +57,8 @@
             <a href="contact.html">Contact</a>
           </li>
         </ul>
+
         <ul class="language-mobile-menu">
-          <li>
-            <a class="active" href="#">EN</a>
-          </li>
           <li>
             <a href="#">ET</a>
           </li>
@@ -70,19 +92,21 @@
         <div class="top-bar">
           <div class="row">
             <div class="col-xs-6 left">
-              <!-- <ul>
+              <ul>
                 <li>
-                  <a href="terms-and-conditions.html">
+                  <a class="open-terms-modal" href="#">
                     Terms & Conditions
                   </a>
                 </li>
-              </ul> -->
+                <li>
+                  <a class="open-help-modal" href="#">
+                    Help
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="col-xs-6 right">
               <ul>
-                <li>
-                  <a class="active" href="#">EN</a>
-                </li>
                 <li>
                   <a href="#">ET</a>
                 </li>
@@ -111,7 +135,7 @@
                 <li>
                   <a href="index.html">Home</a>
                 </li>
-                <li>
+                <li class="dropdown-toggle">
                   <a href="reception.html">Reception</a>
                 </li>
                 <li>
@@ -127,6 +151,11 @@
                   <a href="contact.html">Contact</a>
                 </li>
               </ul>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="registration.html">Registration</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -135,7 +164,6 @@
       <!-- end desktop navigation -->
 
       <main>
-
 
 
       <div class="price-list-content">
@@ -184,13 +212,6 @@
       crossorigin="anonymous">
     </script>
 
-    <script>
-      $('.js-toggle-menu').click(function(e){
-        e.preventDefault();
-        $(this).toggleClass('open');
-        $('.page-wrap').toggleClass('disabled');
-        $('body').toggleClass('disabled');
-      });
-    </script>
+    <script src="js/nav.js"></script>
   </body>
 </html>

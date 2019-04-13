@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 @font-face {
   font-family: 'Avenir Light';
   src: url("../fonts/avenir-light.woff"); }
@@ -95,6 +96,20 @@ header {
         .mobile-nav-wrap .fixed-mobile-nav li a.active {
           text-decoration: underline;
           font-family: "Avenir Black"; }
+      .mobile-nav-wrap .fixed-mobile-nav li.no-border {
+        border-bottom: none; }
+      .mobile-nav-wrap .fixed-mobile-nav li.sub-item a {
+        font-size: 18px;
+        margin-left: 20px; }
+        .mobile-nav-wrap .fixed-mobile-nav li.sub-item a .bullet {
+          font-size: 12px;
+          padding-right: 5px; }
+        .mobile-nav-wrap .fixed-mobile-nav li.sub-item a.active {
+          text-decoration: none; }
+          .mobile-nav-wrap .fixed-mobile-nav li.sub-item a.active .bullet {
+            text-decoration: none; }
+          .mobile-nav-wrap .fixed-mobile-nav li.sub-item a.active .text {
+            text-decoration: underline; }
 
 .top-bar {
   background-color: #5b7fe8;
@@ -146,10 +161,30 @@ header {
           color: #5b7fe8;
           text-decoration: underline;
           transition: 0.2s; }
+  .main-nav .dropdown-menu {
+    margin-top: 20px;
+    background-color: #5b7fe8;
+    position: absolute;
+    right: 400px;
+    top: 120px;
+    width: 120px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    opacity: 0; }
+    .main-nav .dropdown-menu li a {
+      font-family: "Avenir Black";
+      color: #fff; }
+      .main-nav .dropdown-menu li a:hover {
+        color: #fff; }
+      .main-nav .dropdown-menu li a.active {
+        color: #fff; }
 
 @media (max-width: 850px) {
   .main-nav ul li {
-    margin: 0 10px; } }
+    margin: 0 10px; }
+  .main-nav .dropdown-menu {
+    right: 355px; } }
 @media (min-width: 768px) {
   header, .mobile-nav-wrap {
     display: none; } }
@@ -160,12 +195,18 @@ header {
   .top-bar ul li, .main-nav ul li {
     margin: 0 25px; }
     .top-bar ul li a, .main-nav ul li a {
-      font-size: 22px; } }
+      font-size: 22px; }
+  .top-bar .dropdown-menu, .main-nav .dropdown-menu {
+    width: 200px;
+    right: 570px; } }
 @media (min-width: 2300px) {
   .top-bar ul li, .main-nav ul li {
     margin: 0 35px; }
     .top-bar ul li a, .main-nav ul li a {
-      font-size: 25px; } }
+      font-size: 25px; }
+  .top-bar .dropdown-menu, .main-nav .dropdown-menu {
+    width: 250px;
+    right: 690px; } }
 .hero {
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/hero-bg.jpeg");
   background: -o-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/hero-bg.jpeg");
@@ -413,6 +454,227 @@ footer {
     margin-bottom: 100px;
     text-align: center;
     font-size: 18px; } }
+.modal-container {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: none; }
+  .modal-container .modal {
+    height: auto;
+    min-height: 300px;
+    width: 60%;
+    min-width: 280px;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 3px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    .modal-container .modal .close-button {
+      float: right;
+      margin-right: 20px;
+      margin-top: 5px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      color: #262626;
+      font-size: 28px; }
+    .modal-container .modal p {
+      width: 80%;
+      margin: 0 auto;
+      min-width: 250px;
+      padding-top: 15px; }
+    .modal-container .modal .bold {
+      padding-top: 80px; }
+
+#shell {
+  border: 2px solid #262626;
+  background-color: #fff;
+  height: auto;
+  min-height: 440px !important;
+  border-radius: 2px;
+  font-family: 'Avenir Light', sans-serif;
+  width: 80%;
+  min-width: 250px;
+  max-width: 800px;
+  margin: 40px auto 130px auto;
+  padding: 20px;
+  position: relative; }
+
+#staff_id, #unit_id, #month {
+  padding: 5px 35px 5px 10px;
+  font-size: 16px;
+  border: 2px solid #262626;
+  height: 50px;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 200px;
+  background: url(https://i.ibb.co/VYZ27nX/carets.png) 96%/9% no-repeat #fff;
+  font-family: 'Avenir', sans-serif; }
+
+#shell .change {
+  border-collapse: unset;
+  border-spacing: 25px;
+  background-color: #fff;
+  float: left; }
+
+#shell .calendar .change {
+  border-spacing: 0 !important;
+  display: block;
+  margin: 0 auto;
+  float: right;
+  margin-bottom: -50px; }
+
+#shell .calendar .change thead th,
+#shell .calendar .change tfoot th {
+  color: #fff;
+  background-color: #5b7fe8;
+  border-spacing: 0 !important;
+  border: 15px solid #5b7fe8;
+  font-family: 'Avenir', sans-serif;
+  font-weight: 700; }
+
+#shell .calendar .change tbody td {
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
+  border-left: 15px solid #fff;
+  border-right: 15px solid #fff; }
+
+.choice {
+  background-color: #fff;
+  border: none; }
+
+.prompt {
+  vertical-align: middle;
+  display: table-cell;
+  font-style: italic;
+  color: #262626;
+  font-family: 'Avenir', sans-serif;
+  float: right;
+  padding-top: 80px; }
+
+.editing {
+  border: none; }
+
+button[name="Q"] {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  font-family: 'Avenir', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #5b7fe8;
+  border: 1px solid #5b7fe8;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 45px;
+  width: 120px; }
+
+button[name="Q"] a {
+  color: #fff; }
+
+@media (max-width: 940px) {
+  #shell .calendar .change thead th,
+  #shell .calendar .change tfoot th {
+    border: 10px solid #5b7fe8; }
+
+  #shell .calendar .change tbody td {
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff; } }
+@media (max-width: 850px) {
+  .prompt, #shell .change {
+    float: none; }
+
+  .prompt {
+    padding-top: 0;
+    padding-bottom: 80px; }
+
+  button[name="Q"] {
+    left: 30px; }
+
+  #shell .calendar .change {
+    float: none;
+    width: 568px;
+    margin: 0 auto; }
+
+  #shell .calendar .change thead th,
+  #shell .calendar .change tfoot th {
+    border: 25px solid #5b7fe8; }
+
+  #shell .calendar .change tbody td {
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    border-left: 15px solid #fff;
+    border-right: 15px solid #fff; } }
+@media (max-width: 700px) {
+  #shell .calendar .change {
+    width: 415px; }
+
+  #shell .calendar .change thead th,
+  #shell .calendar .change tfoot th {
+    border: 15px solid #5b7fe8; }
+
+  #shell .calendar .change tbody td {
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    border-left: 15px solid #fff;
+    border-right: 15px solid #fff; } }
+@media (max-width: 530px) {
+  #shell .calendar .change {
+    width: 334px; }
+
+  #shell .calendar .change thead th,
+  #shell .calendar .change tfoot th {
+    border: 10px solid #5b7fe8; }
+
+  #shell .calendar .change tbody td {
+    border-top: 8px solid #fff;
+    border-bottom: 8px solid #fff;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff; } }
+@media (max-width: 414px) {
+  #shell .calendar .change {
+    width: 254px; }
+
+  #shell .calendar .change thead th,
+  #shell .calendar .change tfoot th {
+    border: 5px solid #5b7fe8; }
+
+  #shell .calendar .change tbody td {
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff; }
+
+  .prompt {
+    padding-top: 20px; } }
+@media (max-width: 400px) {
+  #shell {
+    padding: 10px; }
+
+  #staff_id, #unit_id, #month {
+    width: 180px !important; }
+
+  #shell .change {
+    border-spacing: 10px !important; } }
+@media (max-width: 382px) {
+  #shell {
+    padding: 8px; }
+
+  #staff_id, #unit_id, #month {
+    width: 160px !important; } }
 body {
   font-family: "Avenir Light";
   padding: 0;
