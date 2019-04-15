@@ -18,6 +18,11 @@
       text-decoration: underline;
     }
   }
+  .building-background {
+    background-image: url('../img/building.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (max-width: 767px) {

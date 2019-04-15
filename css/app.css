@@ -330,6 +330,10 @@ footer {
       font-family: "Avenir Black";
       color: #5b7fe8;
       text-decoration: underline; }
+  .reception-content .building-background {
+    background-image: url("../img/building.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 @media (max-width: 767px) {
   .reception-content p {
