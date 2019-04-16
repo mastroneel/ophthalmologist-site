@@ -510,7 +510,7 @@ footer {
   padding: 20px;
   position: relative; }
 
-#staff_id, #unit_id, #month {
+#staff_id, #unit_id, #month, select {
   padding: 5px 35px 5px 10px;
   font-size: 16px;
   border: 2px solid #262626;
@@ -522,6 +522,28 @@ footer {
   width: 200px;
   background: url(https://i.ibb.co/VYZ27nX/carets.png) 96%/9% no-repeat #fff;
   font-family: 'Avenir', sans-serif; }
+
+input {
+  font-size: 16px;
+  border: 2px solid #262626;
+  height: 40px;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 194px;
+  font-family: 'Avenir', sans-serif; }
+
+.caledit table {
+  margin: 40px auto; }
+
+.caledit thead th, .caledit tfoot th {
+  color: #fff;
+  background-color: #5b7fe8;
+  border-spacing: 0 !important;
+  border: 8px solid #5b7fe8;
+  font-family: 'Avenir', sans-serif;
+  font-weight: 700; }
 
 #shell .change {
   border-collapse: unset;
@@ -551,7 +573,7 @@ footer {
   border-left: 15px solid #fff;
   border-right: 15px solid #fff; }
 
-.choice {
+#choice {
   background-color: #fff;
   border: none; }
 
@@ -562,10 +584,12 @@ footer {
   color: #262626;
   font-family: 'Avenir', sans-serif;
   float: right;
-  padding-top: 80px; }
+  padding-top: 80px;
+  padding-bottom: 40px; }
 
 .editing {
-  border: none; }
+  border: none;
+  float: none; }
 
 button[name="Q"] {
   position: absolute;
@@ -587,6 +611,20 @@ button[name="Q"] {
 button[name="Q"] a {
   color: #fff; }
 
+.toolt {
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+  padding: 5px;
+  font-family: 'Avenir';
+  display: none;
+  font-size: 0.8em; }
+
+.toolt .sdat {
+  font-weight: 700;
+  text-align: center;
+  color: #5b7fe8; }
+
 @media (max-width: 940px) {
   #shell .calendar .change thead th,
   #shell .calendar .change tfoot th {
@@ -602,8 +640,8 @@ button[name="Q"] a {
     float: none; }
 
   .prompt {
-    padding-top: 0;
-    padding-bottom: 80px; }
+    padding-top: 40px;
+    padding-bottom: 0; }
 
   button[name="Q"] {
     left: 30px; }
@@ -678,7 +716,13 @@ button[name="Q"] a {
     padding: 8px; }
 
   #staff_id, #unit_id, #month {
-    width: 160px !important; } }
+    width: 160px !important; }
+
+  input {
+    width: 160px; }
+
+  select {
+    width: 166px; } }
 body {
   font-family: "Avenir Light";
   padding: 0;

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css" />
+  <link rel="stylesheet" href="css/app.css">
+  <title></title>
+</head>
+
+<body>
+
+  <div class="modal-container terms-modal-container">
+    <div class="modal">
+      <a class="close-button" href="#">x</a>
+      <p class="bold">Terms & Conditions</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, nobis porro modi, quod sint dignissimos facilis dolore. Asperiores temporibus labore dicta dolores, dolorum autem ratione harum beatae odit ab voluptatum!
+      </p>
+    </div>
+  </div>
+
+  <div class="modal-container help-modal-container">
+    <div class="modal">
+      <a class="close-button" href="#">x</a>
+      <p class="bold">Help</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, nobis porro modi, quod sint dignissimos facilis dolore. Asperiores temporibus labore dicta dolores, dolorum autem ratione harum beatae odit ab voluptatum!
+      </p>
+    </div>
+  </div>
+
+  <!-- start page container -->
+  <div class="page-container">
+
+    <!-- start mobile nav -->
+    <nav class="mobile-nav-wrap" role="navigation">
+      <ul class="fixed-mobile-nav accordion-menu">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li class="no-border">
+          <a href="reception.html">Reception</a>
+        </li>
+        <li class="sub-item">
+          <a class="active" href="registration.html"><span class="bullet">•</span> <span class="text">Registration</span></a>
+        </li>
+        <li>
+          <a href="price-list.html">Price List</a>
+        </li>
+        <li>
+          <a href="about.html">Our Team</a>
+        </li>
+        <li>
+          <a href="instruments.html">Instruments</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <ul class="language-mobile-menu">
+        <li>
+          <a href="#">ET</a>
+        </li>
+        <li>
+          <a href="#">FI</a>
+        </li>
+        <li>
+          <a href="#">RU</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="page-wrap">
+      <header>
+
+        <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+          <span class="menu-item"></span>
+          <span class="menu-item"></span>
+          <span class="menu-item"></span>
+        </a>
+
+      </header>
+
+
+
+      <!-- end mobile nav -->
+
+      <!-- start desktop navigation -->
+      <nav class="nav-desktop">
+        <!-- start top bar -->
+        <div class="top-bar">
+          <div class="row">
+            <div class="col-xs-6 left">
+              <ul>
+                <li>
+                  <a class="open-terms-modal" href="#">
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a class="open-help-modal" href="#">
+                    Help
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-6 right">
+              <ul>
+                <li>
+                  <a href="#">ET</a>
+                </li>
+                <li>
+                  <a href="#">FI</a>
+                </li>
+                <li>
+                  <a href="#">RU</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end top bar -->
+
+        <!-- start main nav -->
+        <div class="main-nav">
+          <div class="row">
+            <div class="col-xs-3 left">
+              <a href="index.html">
+                <img src="img/logo.png" />
+              </a>
+            </div>
+            <div class="col-xs-9 right">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown-toggle">
+                  <a class="active" href="reception.html">Reception</a>
+                </li>
+                <li>
+                  <a href="price-list.html">Price List</a>
+                </li>
+                <li>
+                  <a href="about.html">Our Team</a>
+                </li>
+                <li>
+                  <a href="instruments.html">Instruments</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="active" href="registration.html">Registration</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end main nav -->
+      </nav>
+      <!-- end desktop navigation -->
+
+      <main>
+
+
+
+
+        <div id="shell">
+          <div class="booking">
+            <div id="choice" class="choice">
+              <form id="booking">
+                <table class="change">
+                  <tbody>
+                    <tr>
+                      <!-- <td class="hide"><input type="radio" name="peun:c1" id="staff" checked="checked"></td> -->
+                      <td><label for="staff_id" id="l_staff_id">Doctor</label></td>
+                      <td><select id="staff_id" name="staff_id:za!-10">
+
+
+              <option value="2">Dr. Main Person</option><option value="8" selected="selected">Dr. Elle Lepik</option></select></td>
+                    </tr>
+                    <tr>
+                      <!-- <td class="hide"><input type="radio" name="peun:c1" id="unit"></td> -->
+                      <td><label for="unit_id" id="l_unit_id">Cabinet</label></td>
+                      <td><select id="unit_id" name="unit_id:za!-10">
+
+
+              <option value="2" selected="selected">DeLange</option></select></td>
+                    </tr>
+                    <tr>
+                      <!-- <td class="hide"></td> -->
+                      <td><label for="month" id="l_month">Month</label></td>
+                      <td><select id="month" name="month:c1!">
+                <option value="2019-04" selected="selected">April 2019</option>
+              </select></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+              <div class="calendar" id="schedule">
+                <table class="change">
+                  <thead>
+                    <tr>
+                      <th colspan="8">April 2019</th>
+                    </tr>
+                    <tr>
+                      <th>#</th>
+                      <th>Mo</th>
+                      <th>Tu</th>
+                      <th>We</th>
+                      <th>Th</th>
+                      <th>Fr</th>
+                      <th>Sa</th>
+                      <th>Su</th>
+                    </tr>
+
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th colspan="8">Dr. Elle Lepik</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td class="weekno">14</td>
+                      <td class="dayE" id="d2019-04-01"><span class="dayN">01</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-02"><span class="dayN">02</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-03"><span class="dayN">03</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-04"><span class="dayN">04</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-05"><span class="dayN">05</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-06"><span class="dayN">06</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-07"><span class="dayN">07</span>
+                        <div></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="weekno">15</td>
+                      <td class="dayE" id="d2019-04-08"><span class="dayN">08</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-09"><span class="dayN">09</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-10"><span class="dayN">10</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-11"><span class="dayN">11</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-12"><span class="dayN">12</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-13"><span class="dayN">13</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-14"><span class="dayN">14</span>
+                        <div></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="weekno">16</td>
+                      <td class="dayF" id="d2019-04-15"><span class="dayN">15</span>
+                        <!-- <div>{"14:40":["6505","20",null,"2",null,"",1551342246],"15:00":["6506","20",null,"2",null,"",1551342246],"15:20":["6507","20",null,"2",null,"",1551342246],"15:40":["6508","20",null,"2",null,"",1551342246],"16:00":["6509","20",null,"2",null,"",1551342246],"16:20":["6510","20",null,"2",null,"",1551342246],"16:40":["6511","20",null,"2",null,"",1551342246],"17:00":["6512","20",null,"2",null,"",1551342246],"17:20":["6513","20",null,"2",null,"",1551342246],"17:40":["6514","20",null,"2",null,"",1551342246]}</div> -->
+                      </td>
+                      <td class="dayF" id="d2019-04-16"><span class="dayN">16</span>
+                        <!-- <div>{"09:20":["6515","20",null,"2",null,"",1551342246],"09:40":["6516","20",null,"2",null,"",1551342246],"10:00":["6517","20",null,"2",null,"",1551342246],"10:20":["6518","20",null,"2",null,"",1551342246],"10:40":["6519","20",null,"2",null,"",1551342246],"11:00":["6520","20",null,"2",null,"",1551342246],"11:20":["6521","20",null,"2",null,"",1551342246],"11:40":["6522","20",null,"2",null,"",1551342246],"12:00":["6523","20",null,"2",null,"",1551342246],"12:20":["6524","20",null,"2",null,"",1551342246],"12:40":["6525","20",null,"2",null,"",1551342246]}</div> -->
+                      </td>
+                      <td class="dayF" id="d2019-04-17"><span class="dayN">17</span>
+                        <!-- <div>{"14:40":["6526","20",null,"2",null,"",1551342246],"15:00":["6527","20",null,"2",null,"",1551342246],"15:20":["6528","20",null,"2",null,"",1551342246],"15:40":["6529","20",null,"2",null,"",1551342246],"16:00":["6530","20",null,"2",null,"",1551342246],"16:20":["6531","20",null,"2",null,"",1551342246],"16:40":["6532","20",null,"2",null,"",1551342246],"17:00":["6533","20",null,"2",null,"",1551342246],"17:20":["6534","20",null,"2",null,"",1551342246],"17:40":["6535","20",null,"2",null,"",1551342246]}</div> -->
+                      </td>
+                      <td class="dayF" id="d2019-04-18"><span class="dayN">18</span>
+                        <!-- <div>{"09:20":["6536","20",null,"2",null,"",1551342246],"09:40":["6537","20",null,"2",null,"",1551342246],"10:00":["6538","20",null,"2",null,"",1551342246],"10:20":["6539","20",null,"2",null,"",1551342246],"10:40":["6540","20",null,"2",null,"",1551342246],"11:00":["6541","20",null,"2",null,"",1551342246],"11:20":["6542","20",null,"2",null,"",1551342246],"11:40":["6543","20",null,"2",null,"",1551342246],"12:00":["6544","20",null,"2",null,"",1551342246],"12:20":["6545","20",null,"2",null,"",1551342246],"12:40":["6546","20",null,"2",null,"",1551342246]}</div> -->
+                      </td>
+                      <td class="dayF" id="d2019-04-19"><span class="dayN">19</span>
+                        <!-- <div>{"09:20":["6547","20","paid","2",null,"",1551342246],"09:40":["6548","20","paid","2",null,"",1551342246],"10:00":["6549","20","paid","2",null,"",1551342246],"10:20":["6550","20","paid","2",null,"",1551342246],"10:40":["6551","20","paid","2",null,"",1551342246],"11:00":["6552","20","paid","2",null,"",1551342246],"11:20":["6553","20","paid","2",null,"",1551342246],"11:40":["6554","20","paid","2",null,"",1551342246],"12:00":["6555","20","paid","2",null,"",1551342246],"12:20":["6556","20","paid","2",null,"",1551342246],"12:40":["6557","20","paid","2",null,"",1551342246]}</div> -->
+                      </td>
+                      <td class="dayE" id="d2019-04-20"><span class="dayN">20</span>
+                        <!-- <div></div> -->
+                      </td>
+                      <td class="dayE" id="d2019-04-21"><span class="dayN">21</span>
+                        <!-- <div></div> -->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="weekno">17</td>
+                      <td class="dayF" id="d2019-04-22"><span class="dayN">22</span>
+                        <!-- <div>{"14:40":["6558","20",null,"2",null,"",1551342246],"15:00":["6559","20",null,"2",null,"",1551342246],"15:20":["6560","20",null,"2",null,"",1551342246],"15:40":["6561","20",null,"2",null,"",1551342246],"16:00":["6562","20",null,"2",null,"",1551342246],"16:20":["6563","20",null,"2",null,"",1551342246],"16:40":["6564","20",null,"2",null,"",1551342246],"17:00":["6565","20",null,"2",null,"",1551342246],"17:20":["6566","20",null,"2",null,"",1551342246],"17:40":["6567","20",null,"2",null,"",1551342246]}</div> -->
+                      </td>
+                      <td class="dayF" id="d2019-04-23"><span class="dayN">23</span>
+                        <!-- <div>{"09:20":["6568","20",null,"2",null,"",1551342246],"09:40":["6569","20",null,"2",null,"",1551342246],"10:00":["6570","20",null,"2",null,"",1551342246],"10:20":["6571","20",null,"2",null,"",1551342246],"10:40":["6572","20",null,"2",null,"",1551342246],"11:00":["6573","20",null,"2",null,"",1551342246],"11:20":["6574","20",null,"2",null,"",1551342246],"11:40":["6575","20",null,"2",null,"",1551342246],"12:00":["6576","20",null,"2",null,"",1551342246],"12:20":["6577","20",null,"2",null,"",1551342246],"12:40":["6578","20",null,"2",null,"",1551342246]}</div> -->
+                      </td>
+                      <td class="dayF" id="d2019-04-24"><span class="dayN">24</span>
+                        <!-- <div>{"14:40":["6579","20",null,"2",null,"",1551342246],"15:00":["6580","20",null,"2",null,"",1551342246],"15:20":["6581","20",null,"2",null,"",1551342246],"15:40":["6582","20",null,"2",null,"",1551342246],"16:00":["6583","20",null,"2",null,"",1551342246],"16:20":["6584","20",null,"2",null,"",1551342246],"16:40":["6585","20",null,"2",null,"",1551342246],"17:00":["6586","20",null,"2",null,"",1551342246],"17:20":["6587","20",null,"2",null,"",1551342246],"17:40":["6588","20",null,"2",null,"",1551342246]}</div> -->
+                      </td>
+                      <td class="dayF" id="d2019-04-25"><span class="dayN">25</span>
+                        <!-- <div>{"09:20":["6589","20",null,"2",null,"",1551342246],"09:40":["6590","20",null,"2",null,"",1551342246],"10:00":["6591","20",null,"2",null,"",1551342246],"10:20":["6592","20",null,"2",null,"",1551342246],"10:40":["6593","20",null,"2",null,"",1551342246],"11:00":["6594","20",null,"2",null,"",1551342246],"11:20":["6595","20",null,"2",null,"",1551342246],"11:40":["6596","20",null,"2",null,"",1551342246],"12:00":["6597","20",null,"2",null,"",1551342246],"12:20":["6598","20",null,"2",null,"",1551342246],"12:40":["6599","20",null,"2",null,"",1551342246]}</div> -->
+                      </td>
+                      <td class="dayE" id="d2019-04-26"><span class="dayN">26</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-27"><span class="dayN">27</span>
+                        <div></div>
+                      </td>
+                      <td class="dayE" id="d2019-04-28"><span class="dayN">28</span>
+                        <div></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="weekno">18</td>
+                      <td class="dayF" id="d2019-04-29"><span class="dayN">29</span>
+                        <!-- <div>{"14:40":["6600","20",null,"2",null,"",1551342246],"15:00":["6601","20",null,"2",null,"",1551342246],"15:20":["6602","20",null,"2",null,"",1551342246],"15:40":["6603","20",null,"2",null,"",1551342246],"16:00":["6604","20",null,"2",null,"",1551342246],"16:20":["6605","20",null,"2",null,"",1551342246],"16:40":["6606","20",null,"2",null,"",1551342246],"17:00":["6607","20",null,"2",null,"",1551342246],"17:20":["6608","20",null,"2",null,"",1551342246],"17:40":["6609","20",null,"2",null,"",1551342246]}</div> -->
+                      </td>
+                      <td class="dayF" id="d2019-04-30"><span class="dayN">30</span>
+                        <!-- <div>{"09:20":["6610","20",null,"2",null,"",1551342246],"09:40":["6611","20",null,"2",null,"",1551342246],"10:00":["6612","20",null,"2",null,"",1551342246],"10:20":["6613","20",null,"2",null,"",1551342246],"10:40":["6614","20",null,"2",null,"",1551342246],"11:00":["6615","20",null,"2",null,"",1551342246],"11:20":["6616","20",null,"2",null,"",1551342246],"11:40":["6617","20",null,"2",null,"",1551342246],"12:00":["6618","20",null,"2",null,"",1551342246],"12:20":["6619","20",null,"2",null,"",1551342246],"12:40":["6620","20",null,"2",null,"",1551342246]}</div> -->
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <div id="https:__dev.silmaarst.com:443_et_regn?" style="display: none;">%7B%22booking%22%3A%7B%22staff%22%3A%5Btrue%2Ctrue%5D%2C%22staff_id%22%3A%5B%22%22%2C%22%22%5D%2C%22unit%22%3A%5Bfalse%2Cfalse%5D%2C%22unit_id%22%3A%5B%22%22%2C%22%22%5D%2C%22month%22%3A%5B%222019-04%22%2C%222019-04%22%5D%7D%2C%22caledit%22%3A%7B%22id%22%3A%5B%22%22%2C%22%22%5D%2C%22stamp%22%3A%5B%22%22%2C%22%22%5D%2C%22client_id%22%3A%5B%22%22%2C%22%22%5D%2C%22contact_id%22%3A%5B%22%22%2C%22%22%5D%2C%22status_code%22%3A%5B%22book%22%2C%22book%22%5D%2C%22type%22%3A%5B%22priv%22%2C%22priv%22%5D%2C%22fname%22%3A%5B%22%22%2C%22%22%5D%2C%22lname%22%3A%5B%22%22%2C%22%22%5D%2C%22code%22%3A%5B%22%22%2C%22%22%5D%2C%22country_code%22%3A%5B%22%22%2C%22%22%5D%2C%22email%22%3A%5B%22%22%2C%22%22%5D%2C%22phone%22%3A%5B%22%22%2C%22%22%5D%2C%22note%22%3A%5B%22%22%2C%22%22%5D%7D%7D</div>
+            </div>
+            <div class="editing" id="editing">
+              <div class="prompt" id="prompt">Select the reception, by moving with the mouse on the needed date and then clicking on the right time...</div>
+              <form class="caledit" id="caledit" style="display: none;">
+                <input type="hidden" id="id" name="id:za!-10" value="">
+                <input type="hidden" id="stamp" name="stamp:c1!" value="">
+                <input type="hidden" id="client_id" name="client_id:za!*-10" value="">
+                <input type="hidden" id="contact_id" name="contact_id:zb!-10" value="">
+                <input type="hidden" id="status_code" name="status_code:ca!*-15" value="book">
+                <input type="hidden" id="type" name="type:c1!" value="priv">
+                <table>
+                  <thead>
+                    <tr>
+                      <th colspan="2"></th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th colspan="2"></th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td><label for="fname" id="l_fname">First name</label></td>
+                      <td><input type="text" id="fname" name="fname:cb!-20" value="" size="20" maxlength="20"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="lname" id="l_lname">Last name</label></td>
+                      <td><input type="text" id="lname" name="lname:cb!-20" value="" size="20" maxlength="20"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="code" id="l_code">PIN code</label>
+                        <img src="pub/pic/tip.gif" alt="" title="Your PIN code for Estonia (IK) or Finland (HETU); otherwise native ID or date of birth in the form YYMMDD"></td>
+                      <td><input type="text" id="code" name="code:cb!*-15" value="" size="15" maxlength="15"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="country_code" id="l_country_code" style="font-style: italic;">Country</label>
+                        <img src="pub/pic/tip.gif" alt="" title="Selected Country determines the Code format"></td>
+                      <td><select id="country_code" name="country_code:cc*-2">
+                  <option value="AU">Australia</option>
+  <option value="CA">Canada</option>
+  <option value="EE">Estonia</option>
+  <option value="FI">Finland</option>
+  <option value="DE">Germany</option>
+  <option value="GB">Great Britain</option>
+  <option value="LV">Latvia</option>
+  <option value="LT">Lithuania</option>
+  <option value="NO">Norway</option>
+  <option value="PL">Poland</option>
+  <option value="RU">Russia</option>
+  <option value="SE">Sweden</option>
+  <option value="US">United States</option>
+  <option value="" selected="selected"></option>
+                </select></td>
+                    </tr>
+                    <tr>
+                      <td><label for="email" id="l_email">Email</label>
+                        <img src="pub/pic/tip.gif" alt="" title="Please, specify an acting address for further confirmation of your registration"></td>
+                      <td><input type="text" id="email" name="email:cc!*-64" value="" size="30" maxlength="64"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="phone" id="l_phone">Phone</label>
+                        <img src="pub/pic/tip.gif" alt="" title="Please without an area code if Country is specified; in case of the mobile number it will be used for SMS-notification"></td>
+                      <td><input type="text" id="phone" name="phone:cc!*-15" value="" size="15" maxlength="15"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="note" id="l_note" style="font-style: italic;">Note</label></td>
+                      <td><input type="text" id="note" name="note:ca*-65535" value="" size="30" maxlength="65535"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            <div class="endFloat"></div>
+            <div class="comenu">
+              <div class="msgraw" id="msgraw"></div>
+              <ul class="command" id="command">
+                <li style="display: none;"><button name="Q" type="button">Further</button></li>
+                <li style="display: none;"><button name="CC" type="button">Back</button></li>
+                <li style="display: none;"><button name="S" type="button">Register</button></li>
+              </ul>
+            </div>
+            <!-- <div class="hide" id="section">&nbsp;</div> -->
+            <!-- <div class="hide" id="action">&nbsp;&gt; null</div> -->
+          </div>
+          <div class="toolt" id="toolt" style="display: none; left: 522px; top: 46px;">
+            <div class="sdat" id="sdat">19.04.2019</div>
+            <div class="stims" id="stims">
+              <div class="stim">
+                <!-- <span class="hide"> -->
+                09:20</span><span>09:20</span><span class="type">P</span><span class="free"></span></div>
+              <div class="stim">
+                <!-- <span class="hide">09:40</span> -->
+                <span>09:40</span><span class="type">P</span><span class="free"></span></div>
+              <div class="stim">
+                <!-- <span class="hide">10:00</span> -->
+                <span>10:00</span><span class="type">P</span><span class="free"></span></div>
+              <div class="stim">
+                <!-- <span class="hide">10:20</span> -->
+                <span>10:20</span><span class="type">P</span><span class="free"></span></div>
+              <div class="stim">
+                <!-- <span class="hide">10:40</span> -->
+                <span>10:40</span><span class="type">P</span><span class="free"></span></div>
+              <div class="stim">
+                <!-- <span class="hide">11:00</span> -->
+                <span>11:00</span><span class="type">P</span><span class="free"></span></div>
+              <div class="stim">
+                <!-- <span class="hide">11:20</span> -->
+                <span>11:20</span><span class="type">P</span><span class="free"></span></div>
+              <div class="stim">
+                <!-- <span class="hide">11:40</span> -->
+                <span>11:40</span><span class="type">P</span><span class="free"></span></div>
+              <div class="stim">
+                <!-- <span class="hide">12:00</span> -->
+                <span>12:00</span><span class="type">P</span><span class="free"></span></div>
+              <div class="stim">
+                <!-- <span class="hide">12:20</span> -->
+                <span>12:20</span><span class="type">P</span><span class="free"></span></div>
+              <div class="stim">
+                <!-- <span class="hide">12:40</span> -->
+                <span>12:40</span><span class="type">P</span><span class="free"></span></div>
+            </div>
+
+
+
+
+          </div>
+
+
+
+
+
+          <div class="caledit">
+
+
+
+
+
+                      <table>
+                  <thead>
+                    <tr>
+                      <th colspan="2">13.06.2019 09:20-09:40</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th colspan="2">De Lange</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td><label for="fname" id="l_fname">First name</label></td>
+                      <td><input type="text" id="fname" name="fname:cb!-20" value="" size="20" maxlength="20"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="lname" id="l_lname">Last name</label></td>
+                      <td><input type="text" id="lname" name="lname:cb!-20" value="" size="20" maxlength="20"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="code" id="l_code">PIN code</label>
+                        <img src="180915/pic/tip.gif" alt="" title="Your PIN code for Estonia (IK) or Finland (HETU); otherwise native ID or date of birth in the form YYMMDD"></td>
+                      <td><input type="text" id="code" name="code:cb!*-15" value="" size="15" maxlength="15"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="country_code" id="l_country_code" style="font-style: italic;">Country</label>
+                        <img src="180915/pic/tip.gif" alt="" title="Selected Country determines the Code format"></td>
+                      <td><select id="country_code" name="country_code:cc*-2">
+                          <option value="AU">Australia</option>
+          <option value="EE">Estonia</option>
+          <option value="FI">Finland</option>
+          <option value="DE">Germany</option>
+          <option value="GB">Great Britain</option>
+          <option value="LV">Latvia</option>
+          <option value="LT">Lithuania</option>
+          <option value="NO">Norway</option>
+          <option value="PL">Poland</option>
+          <option value="RU">Russia</option>
+          <option value="SE">Sweden</option>
+          <option value="UA">Ukraine</option>
+          <option value="US">United States</option>
+          <option value="" selected="selected"></option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                      <td><label for="email" id="l_email">Email</label>
+                        <img src="180915/pic/tip.gif" alt="" title="Please, specify an acting address for further confirmation of your registration"></td>
+                      <td><input type="text" id="email" name="email:cc!*-64" value="" size="30" maxlength="64"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="phone" id="l_phone">Phone</label>
+                        <img src="180915/pic/tip.gif" alt="" title="Please without an area code if Country is specified; in case of the mobile number it will be used for SMS-notification"></td>
+                      <td><input type="text" id="phone" name="phone:cc!*-15" value="" size="15" maxlength="15"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="note" id="l_note" style="font-style: italic;">Note</label></td>
+                      <td><input type="text" id="note" name="note:ca*-65535" value="" size="30" maxlength="65535"></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+
+
+              </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- start footer -->
+        <footer class="right">
+          <p>
+            © All Rights Reserved. Silmaarst Elle Lepik OÜ
+          </p>
+        </footer>
+        <!-- end footer -->
+
+      </main>
+      <!-- end main -->
+
+    </div>
+    <!-- end page wrap -->
+
+  </div>
+  <!-- end page container -->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous">
+  </script>
+
+  <script src="js/nav.js"></script>
+</body>
+
+</html>
