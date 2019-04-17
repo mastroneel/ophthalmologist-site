@@ -11,15 +11,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 75vh;
-  min-height: 500px;
-  h1 {
-    font-size: 80px;
-    margin-top: 80px;
+  height: 55vh;
+  min-height: 450px;
+  p.bold {
+    margin-top: 100px;
   }
   p {
-    font-size: 25px;
-    margin-top: -40px;
+    font-size: 30px;
+    margin-top: -10px;
   }
   a {
     color: $white;
@@ -49,9 +48,6 @@
 
 @media (min-width: 1800px) {
   .hero {
-    h1 {
-      font-size: 100px;
-    }
     p {
       font-size: 30px;
     }
@@ -64,9 +60,6 @@
 
 @media (min-width: 2300px) {
   .hero {
-    h1 {
-      font-size: 120px;
-    }
     p {
       font-size: 32px;
       margin-top: -80px;
@@ -82,7 +75,7 @@
 
 @media (min-height: 1000px) {
   .hero {
-    h1 {
+    p.bold {
       margin-top: 150px;
     }
   }
@@ -90,7 +83,7 @@
 
 @media (min-height: 1200px) {
   .hero {
-    h1 {
+    p.bold {
       margin-top: 220px;
     }
   }
