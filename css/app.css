@@ -391,18 +391,18 @@ footer {
     padding: 0;
     margin: 0; }
   .about-content .image-box {
-    min-height: 30vw;
+    min-height: 40vw;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center 20%; }
   .about-content .image-box-1 {
-    background-image: url("../img/doctor-2.jpg"); }
+    background-image: url("../img/elle.jpg"); }
   .about-content .image-box-2 {
-    background-image: url("../img/doctor-3.jpg"); }
+    background-image: url("../img/mikk.jpg"); }
   .about-content .image-box-3 {
-    background-image: url("../img/doctor-1.jpg"); }
+    background-image: url("../img/aliis.jpg"); }
   .about-content .image-box-4 {
-    background-image: url("../img/woman-1.jpg"); }
+    background-image: url("../img/annika.jpg"); }
   .about-content p {
     width: 80%;
     min-width: 290px;
