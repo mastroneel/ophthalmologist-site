@@ -577,7 +577,8 @@ input {
 
 #choice {
   background-color: #fff;
-  border: none; }
+  border: none;
+  position: relative; }
 
 .prompt {
   vertical-align: middle;

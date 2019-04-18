@@ -68,6 +68,7 @@ input {
   margin: 0 auto;
   float: right;
   margin-bottom: -50px;
+  // position: relative;
 }
 
 #shell .calendar .change thead th,
@@ -92,6 +93,7 @@ input {
 #choice {
   background-color: #fff;
   border: none;
+  position: relative;
 }
 
 .prompt {
