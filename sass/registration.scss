@@ -133,8 +133,6 @@ button[name="Q"] a {
   color: #fff;
 }
 
-
-
 .toolt {
   position: fixed;
   z-index: 999;
@@ -143,14 +141,33 @@ button[name="Q"] a {
   font-family: 'Avenir';
   display: none;
   font-size: 0.8em;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #262626;
 }
 
 .toolt .sdat {
   font-weight: 700;
   text-align: center;
   color: #5b7fe8;
+  padding: 5px;
 }
 
+.toolt .stims div {
+  display: inline;
+}
+
+.toolt span {
+    margin-right: 0.2em;
+}
+
+.dayF {
+  background-color: #ddd;
+  border-top: 10px solid #ddd !important;
+  border-bottom: 10px solid #ddd !important;
+  border-left: 15px solid #ddd !important;
+  border-right: 15px solid #ddd !important;
+}
 
 
 @media (max-width: 940px) {
@@ -164,6 +181,14 @@ button[name="Q"] a {
     border-left: 10px solid #fff;
     border-right: 10px solid #fff;
   }
+  .dayF {
+    background-color: #ddd;
+    border-top: 5px solid #ddd !important;
+    border-bottom: 5px solid #ddd !important;
+    border-left: 10px solid #ddd !important;
+    border-right: 10px solid #ddd !important;
+  }
+
 }
 
 @media (max-width: 850px) {
@@ -191,6 +216,13 @@ button[name="Q"] a {
     border-bottom: 10px solid #fff;
     border-left: 15px solid #fff;
     border-right: 15px solid #fff;
+  }
+  .dayF {
+    background-color: #ddd;
+    border-top: 10px solid #ddd !important;
+    border-bottom: 10px solid #ddd !important;
+    border-left: 15px solid #ddd !important;
+    border-right: 15px solid #ddd !important;
   }
 }
 
@@ -224,6 +256,13 @@ button[name="Q"] a {
     border-left: 10px solid #fff;
     border-right: 10px solid #fff;
   }
+  .dayF {
+    background-color: #ddd;
+    border-top: 8px solid #ddd !important;
+    border-bottom: 8px solid #ddd !important;
+    border-left: 10px solid #ddd !important;
+    border-right: 10px solid #ddd !important;
+  }
 }
 
 @media (max-width: 414px) {
@@ -239,6 +278,13 @@ button[name="Q"] a {
     border-bottom: 5px solid #fff;
     border-left: 5px solid #fff;
     border-right: 5px solid #fff;
+  }
+  .dayF {
+    background-color: #ddd;
+    border-top: 5px solid #ddd !important;
+    border-bottom: 5px solid #ddd !important;
+    border-left: 5px solid #ddd !important;
+    border-right: 5px solid #ddd !important;
   }
   .prompt {
     padding-top: 20px;
