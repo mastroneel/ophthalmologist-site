@@ -1,18 +1,18 @@
 .hero {
   background:
     -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-    url("../img/hero-bg.jpeg");
+    url("../img/hero-bg.jpg");
   background:
       -o-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-      url("../img/hero-bg.jpeg");
+      url("../img/hero-bg.jpg");
   background:
       linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-      url("../img/hero-bg.jpeg");
+      url("../img/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  height: 55vh;
-  min-height: 450px;
+  background-position: center bottom;
+  height: 60vh;
+  min-height: 500px;
   p.bold {
     margin-top: 100px;
   }
