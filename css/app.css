@@ -234,6 +234,15 @@ header {
     background-color: #5b7fe8;
     text-align: center;
     font-size: 18px; }
+  .hero .phone a {
+    background: transparent;
+    text-align: left;
+    text-decoration: underline;
+    color: #262626;
+    font-size: 30px;
+    font-family: "Avenir Light";
+    margin-top: -10px;
+    margin-bottom: -10px; }
 
 @media (max-width: 767px) {
   .hero {

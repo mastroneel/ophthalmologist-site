@@ -33,6 +33,18 @@
     text-align: center;
     font-size: 18px;
   }
+  .phone {
+    a {
+      background: transparent;
+      text-align: left;
+      text-decoration: underline;
+      color: $gray;
+      font-size: 30px;
+      font-family: $main-font;
+      margin-top: -10px;
+      margin-bottom: -10px;
+    }
+  }
 }
 
 
