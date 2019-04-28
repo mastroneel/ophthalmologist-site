@@ -248,7 +248,9 @@ header {
   .hero {
     text-align: center; }
     .hero a {
-      margin: 20px auto; } }
+      margin: 20px auto; }
+    .hero .phone a {
+      text-align: center; } }
 @media (min-width: 1800px) {
   .hero p {
     font-size: 30px; }
@@ -482,7 +484,7 @@ footer {
   .modal-container .modal {
     height: auto;
     min-height: 300px;
-    width: 60%;
+    width: 95%;
     min-width: 280px;
     max-width: 800px;
     text-align: center;
@@ -490,8 +492,9 @@ footer {
     background-color: #fff;
     border-radius: 3px;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%); }
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 15px; }
     .modal-container .modal .close-button {
       float: right;
       margin-right: 20px;
@@ -500,14 +503,28 @@ footer {
       font-weight: 700;
       color: #262626;
       font-size: 28px; }
+    .modal-container .modal h3 {
+      font-size: 14px; }
+    .modal-container .modal h4 {
+      font-size: 13px; }
+    .modal-container .modal p, .modal-container .modal ol, .modal-container .modal ul {
+      font-size: 12px; }
+    .modal-container .modal ol {
+      text-align: left; }
+    .modal-container .modal ul, .modal-container .modal ol {
+      padding: 0;
+      margin: 0 auto; }
     .modal-container .modal p {
       width: 80%;
       margin: 0 auto;
       min-width: 250px;
-      padding-top: 15px; }
+      padding-top: 10px; }
     .modal-container .modal .bold {
-      padding-top: 80px; }
+      padding-top: 30px; }
 
+@media (max-width: 540px) {
+  .modal-container .modal {
+    padding: 0; } }
 #shell {
   border: 2px solid #262626;
   background-color: #fff;
