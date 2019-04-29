@@ -72,7 +72,7 @@ header {
     width: 290px; }
     .mobile-nav-wrap .language-mobile-menu li {
       display: inline-flex;
-      margin: 0 10px; }
+      margin: 0 5px; }
       .mobile-nav-wrap .language-mobile-menu li a {
         color: white;
         display: block;
@@ -116,6 +116,16 @@ header {
           .mobile-nav-wrap .fixed-mobile-nav li.sub-item a.active .text {
             text-decoration: underline; }
 
+@media (max-height: 600px) {
+  .mobile-nav-wrap .fixed-mobile-nav {
+    margin: 20px 0 0; }
+    .mobile-nav-wrap .fixed-mobile-nav li a {
+      font-size: 18px;
+      padding: 10px 0; }
+  .mobile-nav-wrap .language-mobile-menu {
+    margin-left: 50px; }
+    .mobile-nav-wrap .language-mobile-menu li a {
+      font-size: 18px; } }
 .top-bar {
   background-color: #5b7fe8;
   width: 100%;
@@ -485,7 +495,8 @@ footer {
   top: 0;
   left: 0;
   z-index: 10000;
-  display: none; }
+  display: none;
+  overflow: scroll; }
   .modal-container .modal {
     height: auto;
     min-height: 300px;
@@ -525,6 +536,11 @@ footer {
 @media (max-width: 540px) {
   .modal-container .modal {
     padding: 0; } }
+@media (max-width: 350px) {
+  .modal-container .modal {
+    padding: 0; }
+    .modal-container .modal p, .modal-container .modal h2, .modal-container .modal h3, .modal-container .modal h4, .modal-container .modal ol, .modal-container .modal ul {
+      font-size: 11px; } }
 #shell {
   border: 2px solid #262626;
   background-color: #fff;

@@ -9,6 +9,7 @@
   left: 0;
   z-index: 10000;
   display: none;
+  overflow: scroll;
   .modal {
     height: auto;
     min-height: 300px;
@@ -66,6 +67,17 @@
   .modal-container {
     .modal {
       padding: 0;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .modal-container {
+    .modal {
+      padding: 0;
+      p, h2, h3, h4, ol, ul {
+        font-size: 11px;
+      }
     }
   }
 }

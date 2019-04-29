@@ -65,7 +65,7 @@ header {
     width: 290px; }
     .mobile-nav-wrap .language-mobile-menu li {
       display: inline-flex;
-      margin: 0 10px; }
+      margin: 0 5px; }
       .mobile-nav-wrap .language-mobile-menu li a {
         color: white;
         display: block;
@@ -109,6 +109,16 @@ header {
           .mobile-nav-wrap .fixed-mobile-nav li.sub-item a.active .text {
             text-decoration: underline; }
 
+@media (max-height: 600px) {
+  .mobile-nav-wrap .fixed-mobile-nav {
+    margin: 20px 0 0; }
+    .mobile-nav-wrap .fixed-mobile-nav li a {
+      font-size: 18px;
+      padding: 10px 0; }
+  .mobile-nav-wrap .language-mobile-menu {
+    margin-left: 50px; }
+    .mobile-nav-wrap .language-mobile-menu li a {
+      font-size: 18px; } }
 .top-bar {
   background-color: #5b7fe8;
   width: 100%;

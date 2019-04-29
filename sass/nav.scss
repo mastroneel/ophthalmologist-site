@@ -99,7 +99,7 @@ header {
     width: 290px;
     li {
       display: inline-flex;
-      margin: 0 10px;
+      margin: 0 5px;
       a {
         color: white;
         display: block;
@@ -163,7 +163,27 @@ header {
 
 
 
-
+@media (max-height: 600px) {
+  .mobile-nav-wrap {
+    .fixed-mobile-nav {
+      margin: 20px 0 0;
+      li {
+        a {
+          font-size: 18px;
+          padding: 10px 0;
+        }
+      }
+    }
+    .language-mobile-menu {
+      margin-left: 50px;
+      li {
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
 
 
 
