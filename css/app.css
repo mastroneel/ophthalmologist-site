@@ -24,6 +24,11 @@ header {
   height: 80px;
   position: relative;
   background-color: #5b7fe8; }
+  header img {
+    float: right;
+    width: 90px;
+    margin-right: 10px;
+    margin-top: 15px; }
 
 .hamburger-menu {
   display: inline-block;
@@ -487,7 +492,7 @@ footer {
     width: 95%;
     min-width: 280px;
     max-width: 800px;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 3px;
@@ -509,13 +514,8 @@ footer {
       font-size: 13px; }
     .modal-container .modal p, .modal-container .modal ol, .modal-container .modal ul {
       font-size: 12px; }
-    .modal-container .modal ol {
-      text-align: left; }
-    .modal-container .modal ul, .modal-container .modal ol {
-      padding: 0;
-      margin: 0 auto; }
-    .modal-container .modal p {
-      width: 80%;
+    .modal-container .modal p, .modal-container .modal ol, .modal-container .modal ul, .modal-container .modal h2, .modal-container .modal h3, .modal-container .modal h4 {
+      width: 90%;
       margin: 0 auto;
       min-width: 250px;
       padding-top: 10px; }

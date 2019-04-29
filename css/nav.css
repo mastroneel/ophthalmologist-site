@@ -17,6 +17,11 @@ header {
   height: 80px;
   position: relative;
   background-color: #5b7fe8; }
+  header img {
+    float: right;
+    width: 90px;
+    margin-right: 10px;
+    margin-top: 15px; }
 
 .hamburger-menu {
   display: inline-block;
