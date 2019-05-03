@@ -2,7 +2,7 @@
   border: 2px solid #262626;
   background-color: #fff;
   height: auto;
-  min-height: 440px !important;
+  min-height: 400px !important;
   border-radius: 2px;
   font-family: 'Avenir Light', sans-serif;
   width: 80%;
@@ -11,6 +11,15 @@
   margin: 40px auto 130px auto;
   padding: 20px;
   position: relative;
+}
+
+.msgraw {
+  font-family: $bold-font;
+  color: #5b7fe8;
+  float: none;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 25px;
 }
 
 #staff_id, #unit_id, #month, select {
@@ -103,10 +112,10 @@ input {
   color: #262626;
   font-family: 'Avenir', sans-serif;
   float: right;
+  text-align: center;
   padding-top: 80px;
   padding-bottom: 40px;
 }
-
 
 .editing {
   border: none;
@@ -133,6 +142,10 @@ button[name="Q"] {
 
 button[name="Q"] a {
   color: #fff;
+}
+
+button[name] {
+  margin-top: 25px;
 }
 
 .toolt {
@@ -193,7 +206,11 @@ button[name="Q"] a {
 
 }
 
+
 @media (max-width: 850px) {
+  #shell {
+    padding-bottom: 60px;
+  }
   .prompt, #shell .change {
     float: none;
   }
@@ -296,6 +313,7 @@ button[name="Q"] a {
 @media (max-width: 400px) {
   #shell {
     padding: 10px;
+    padding-bottom: 80px;
   }
   #staff_id, #unit_id, #month {
     width: 180px !important;
@@ -303,11 +321,15 @@ button[name="Q"] a {
   #shell .change {
     border-spacing: 10px !important;
   }
+  button[name="Q"] {
+    left: 20px;
+  }
 }
 
 @media (max-width: 382px) {
   #shell {
     padding: 8px;
+    padding-bottom: 80px;
   }
   #staff_id, #unit_id, #month {
     width: 160px !important;

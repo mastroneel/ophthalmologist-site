@@ -545,7 +545,7 @@ footer {
   border: 2px solid #262626;
   background-color: #fff;
   height: auto;
-  min-height: 440px !important;
+  min-height: 400px !important;
   border-radius: 2px;
   font-family: 'Avenir Light', sans-serif;
   width: 80%;
@@ -554,6 +554,14 @@ footer {
   margin: 40px auto 130px auto;
   padding: 20px;
   position: relative; }
+
+.msgraw {
+  font-family: "Avenir Black";
+  color: #5b7fe8;
+  float: none;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 25px; }
 
 #staff_id, #unit_id, #month, select {
   padding: 5px 35px 5px 10px;
@@ -630,6 +638,7 @@ input {
   color: #262626;
   font-family: 'Avenir', sans-serif;
   float: right;
+  text-align: center;
   padding-top: 80px;
   padding-bottom: 40px; }
 
@@ -656,6 +665,9 @@ button[name="Q"] {
 
 button[name="Q"] a {
   color: #fff; }
+
+button[name] {
+  margin-top: 25px; }
 
 .toolt {
   position: fixed;
@@ -706,6 +718,9 @@ button[name="Q"] a {
     border-left: 10px solid #ddd !important;
     border-right: 10px solid #ddd !important; } }
 @media (max-width: 850px) {
+  #shell {
+    padding-bottom: 60px; }
+
   .prompt, #shell .change {
     float: none; }
 
@@ -795,16 +810,21 @@ button[name="Q"] a {
     padding-top: 20px; } }
 @media (max-width: 400px) {
   #shell {
-    padding: 10px; }
+    padding: 10px;
+    padding-bottom: 80px; }
 
   #staff_id, #unit_id, #month {
     width: 180px !important; }
 
   #shell .change {
-    border-spacing: 10px !important; } }
+    border-spacing: 10px !important; }
+
+  button[name="Q"] {
+    left: 20px; } }
 @media (max-width: 382px) {
   #shell {
-    padding: 8px; }
+    padding: 8px;
+    padding-bottom: 80px; }
 
   #staff_id, #unit_id, #month {
     width: 160px !important; }
