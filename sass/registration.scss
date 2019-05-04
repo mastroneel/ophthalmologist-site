@@ -122,7 +122,7 @@ input {
   float: none;
 }
 
-button[name="Q"] {
+button[name="Q"], button[name="CC"], button[name="S"] {
   position: absolute;
   bottom: 20px;
   right: 30px;
@@ -140,7 +140,7 @@ button[name="Q"] {
   width: 120px;
 }
 
-button[name="Q"] a {
+button[name="Q"] a, button[name="CC"] a, button[name="S"] a {
   color: #fff;
 }
 
@@ -218,7 +218,7 @@ button[name] {
     padding-top: 40px;
     padding-bottom: 0;
   }
-  button[name="Q"] {
+  button[name="Q"], button[name="CC"], button[name="S"] {
     left: 30px;
   }
   #shell .calendar .change {
@@ -321,7 +321,7 @@ button[name] {
   #shell .change {
     border-spacing: 10px !important;
   }
-  button[name="Q"] {
+  button[name="Q"], button[name="CC"], button[name="S"] {
     left: 20px;
   }
 }

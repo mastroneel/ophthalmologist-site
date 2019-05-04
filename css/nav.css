@@ -72,10 +72,10 @@ header {
         font-size: 20px;
         padding: 15px 0;
         text-decoration: none;
-        font-family: "Avenir Light"; }
+        font-family: "Avenir Light", "Avenir", sans-serif; }
         .mobile-nav-wrap .language-mobile-menu li a.active {
           text-decoration: underline;
-          font-family: "Avenir Black"; }
+          font-family: "Avenir Black", "Avenir", sans-serif; }
   .mobile-nav-wrap .fixed-mobile-nav {
     list-style: none;
     margin: 50px 0 0;
@@ -90,10 +90,10 @@ header {
         font-size: 20px;
         padding: 15px 0;
         text-decoration: none;
-        font-family: "Avenir Light"; }
+        font-family: "Avenir Light", "Avenir", sans-serif; }
         .mobile-nav-wrap .fixed-mobile-nav li a.active {
           text-decoration: underline;
-          font-family: "Avenir Black"; }
+          font-family: "Avenir Black", "Avenir", sans-serif; }
       .mobile-nav-wrap .fixed-mobile-nav li.no-border {
         border-bottom: none; }
       .mobile-nav-wrap .fixed-mobile-nav li.sub-item a {
@@ -133,7 +133,7 @@ header {
         color: #fff;
         transition: 0.2s; }
         .top-bar ul li a.active {
-          font-family: "Avenir Black";
+          font-family: "Avenir Black", "Avenir", sans-serif;
           text-decoration: underline; }
         .top-bar ul li a:hover {
           text-decoration: underline;
@@ -163,7 +163,7 @@ header {
         color: #262626;
         transition: 0.2s; }
         .main-nav ul li a.active {
-          font-family: "Avenir Black";
+          font-family: "Avenir Black", "Avenir", sans-serif;
           color: #5b7fe8;
           text-decoration: underline; }
         .main-nav ul li a:hover {
@@ -182,7 +182,7 @@ header {
     text-align: center;
     opacity: 0; }
     .main-nav .dropdown-menu li a {
-      font-family: "Avenir Black";
+      font-family: "Avenir Black", "Avenir", sans-serif;
       color: #fff; }
       .main-nav .dropdown-menu li a:hover {
         color: #fff; }

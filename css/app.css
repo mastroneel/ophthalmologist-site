@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 @font-face {
   font-family: 'Avenir Light';
   src: url("../fonts/avenir-light.woff"); }
 @font-face {
   font-family: 'Avenir Black';
   src: url("../fonts/avenir-black.woff"); }
+@font-face {
+  font-family: 'Nunito';
+  src: url("../fonts/Nunito-Regular.ttf"); }
 body.disabled {
   overflow: hidden; }
 
@@ -79,10 +81,10 @@ header {
         font-size: 20px;
         padding: 15px 0;
         text-decoration: none;
-        font-family: "Avenir Light"; }
+        font-family: "Avenir Light", "Avenir", sans-serif; }
         .mobile-nav-wrap .language-mobile-menu li a.active {
           text-decoration: underline;
-          font-family: "Avenir Black"; }
+          font-family: "Avenir Black", "Avenir", sans-serif; }
   .mobile-nav-wrap .fixed-mobile-nav {
     list-style: none;
     margin: 50px 0 0;
@@ -97,10 +99,10 @@ header {
         font-size: 20px;
         padding: 15px 0;
         text-decoration: none;
-        font-family: "Avenir Light"; }
+        font-family: "Avenir Light", "Avenir", sans-serif; }
         .mobile-nav-wrap .fixed-mobile-nav li a.active {
           text-decoration: underline;
-          font-family: "Avenir Black"; }
+          font-family: "Avenir Black", "Avenir", sans-serif; }
       .mobile-nav-wrap .fixed-mobile-nav li.no-border {
         border-bottom: none; }
       .mobile-nav-wrap .fixed-mobile-nav li.sub-item a {
@@ -140,7 +142,7 @@ header {
         color: #fff;
         transition: 0.2s; }
         .top-bar ul li a.active {
-          font-family: "Avenir Black";
+          font-family: "Avenir Black", "Avenir", sans-serif;
           text-decoration: underline; }
         .top-bar ul li a:hover {
           text-decoration: underline;
@@ -170,7 +172,7 @@ header {
         color: #262626;
         transition: 0.2s; }
         .main-nav ul li a.active {
-          font-family: "Avenir Black";
+          font-family: "Avenir Black", "Avenir", sans-serif;
           color: #5b7fe8;
           text-decoration: underline; }
         .main-nav ul li a:hover {
@@ -189,7 +191,7 @@ header {
     text-align: center;
     opacity: 0; }
     .main-nav .dropdown-menu li a {
-      font-family: "Avenir Black";
+      font-family: "Avenir Black", "Avenir", sans-serif;
       color: #fff; }
       .main-nav .dropdown-menu li a:hover {
         color: #fff; }
@@ -239,7 +241,7 @@ header {
     margin-top: -10px; }
   .hero a {
     color: #fff;
-    font-family: "Avenir Black";
+    font-family: "Avenir Black", "Avenir", sans-serif;
     text-transform: uppercase;
     display: block;
     width: 290px;
@@ -255,7 +257,7 @@ header {
     text-decoration: underline;
     color: #262626;
     font-size: 30px;
-    font-family: "Avenir Light";
+    font-family: "Avenir Light", "Avenir", sans-serif;
     margin-top: -10px;
     margin-bottom: -10px; }
 
@@ -356,7 +358,7 @@ footer {
     transform: translateY(-40%);
     font-size: 18px; }
     .reception-content p a {
-      font-family: "Avenir Black";
+      font-family: "Avenir Black", "Avenir", sans-serif;
       color: #5b7fe8;
       text-decoration: underline; }
   .reception-content .building-background {
@@ -556,7 +558,7 @@ footer {
   position: relative; }
 
 .msgraw {
-  font-family: "Avenir Black";
+  font-family: "Avenir Black", "Avenir", sans-serif;
   color: #5b7fe8;
   float: none;
   text-align: center;
@@ -646,7 +648,7 @@ input {
   border: none;
   float: none; }
 
-button[name="Q"] {
+button[name="Q"], button[name="CC"], button[name="S"] {
   position: absolute;
   bottom: 20px;
   right: 30px;
@@ -663,7 +665,7 @@ button[name="Q"] {
   height: 45px;
   width: 120px; }
 
-button[name="Q"] a {
+button[name="Q"] a, button[name="CC"] a, button[name="S"] a {
   color: #fff; }
 
 button[name] {
@@ -728,7 +730,7 @@ button[name] {
     padding-top: 40px;
     padding-bottom: 0; }
 
-  button[name="Q"] {
+  button[name="Q"], button[name="CC"], button[name="S"] {
     left: 30px; }
 
   #shell .calendar .change {
@@ -819,7 +821,7 @@ button[name] {
   #shell .change {
     border-spacing: 10px !important; }
 
-  button[name="Q"] {
+  button[name="Q"], button[name="CC"], button[name="S"] {
     left: 20px; } }
 @media (max-width: 382px) {
   #shell {
@@ -835,20 +837,20 @@ button[name] {
   select {
     width: 166px; } }
 body {
-  font-family: "Avenir Light";
+  font-family: "Avenir Light", "Avenir", sans-serif;
   padding: 0;
   margin: 0;
   color: #262626; }
 
 h1 {
-  font-family: "Avenir Black"; }
+  font-family: "Avenir Black", "Avenir", sans-serif; }
 
 .page-container {
   width: 100vw;
   overflow: hidden; }
 
 .bold {
-  font-family: "Avenir Black"; }
+  font-family: "Avenir Black", "Avenir", sans-serif; }
 
 .left {
   text-align: left; }
