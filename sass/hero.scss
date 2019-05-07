@@ -1,20 +1,20 @@
 .hero {
   background:
     -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-    url("../img/hero-bg.jpg");
+    url("../img/hero-2.jpg");
   background:
       -o-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-      url("../img/hero-bg.jpg");
+      url("../img/hero-2.jpg");
   background:
       linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-      url("../img/hero-bg.jpg");
+      url("../img/hero-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: left bottom;
   height: 60vh;
   min-height: 500px;
   p.bold {
-    margin-top: 100px;
+    margin-top: 90px;
   }
   p {
     font-size: 30px;

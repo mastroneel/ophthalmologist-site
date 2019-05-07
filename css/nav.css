@@ -150,9 +150,9 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #262626; }
   .main-nav img {
-    width: 120px;
+    width: 100px;
     margin-left: 25px;
-    margin-top: 15px; }
+    margin-top: 0px; }
   .main-nav ul {
     margin-right: 25px;
     list-style-type: none; }

@@ -159,9 +159,9 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #262626; }
   .main-nav img {
-    width: 120px;
+    width: 100px;
     margin-left: 25px;
-    margin-top: 15px; }
+    margin-top: 0px; }
   .main-nav ul {
     margin-right: 25px;
     list-style-type: none; }
@@ -226,16 +226,16 @@ header {
     width: 250px;
     right: 690px; } }
 .hero {
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/hero-bg.jpg");
-  background: -o-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/hero-bg.jpg");
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/hero-bg.jpg");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/hero-2.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/hero-2.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/hero-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: left bottom;
   height: 60vh;
   min-height: 500px; }
   .hero p.bold {
-    margin-top: 100px; }
+    margin-top: 90px; }
   .hero p {
     font-size: 30px;
     margin-top: -10px; }
@@ -414,7 +414,7 @@ footer {
     font-size: 30px; } }
 .about-content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 80px auto; }
   .about-content .col-xs-12, .about-content .col-sm-6 {
     padding: 0;
