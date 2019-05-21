@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/app.css">
   <title></title>
 </head>
@@ -385,7 +386,9 @@
                       <td><input type="text" id="lname" name="lname:cb!-20" value="" size="20" maxlength="20"></td>
                     </tr>
                     <tr>
-                      <td><label for="code" id="l_code">PIN code</label>
+                      <td><label for="code" id="l_code">PIN code <i class="fa fa-info-circle"></i>
+
+</label>
                         <img src="pub/pic/tip.gif" alt="" title="Your PIN code for Estonia (IK) or Finland (HETU); otherwise native ID or date of birth in the form YYMMDD"></td>
                       <td><input type="text" id="code" name="code:cb!*-15" value="" size="15" maxlength="15"></td>
                     </tr>
@@ -513,43 +516,83 @@
                       <td><input type="text" id="lname" name="lname:cb!-20" value="" size="20" maxlength="20"></td>
                     </tr>
                     <tr>
-                      <td><label for="code" id="l_code">PIN code</label>
-                        <img src="180915/pic/tip.gif" alt="" title="Your PIN code for Estonia (IK) or Finland (HETU); otherwise native ID or date of birth in the form YYMMDD"></td>
-                      <td><input type="text" id="code" name="code:cb!*-15" value="" size="15" maxlength="15"></td>
+                      <td>
+                        <label for="code" id="l_code">
+                          PIN code <i class="fa fa-info-circle open-pin-info"></i>
+                          <p class="more-info pin-info">
+                            <span class="tooltip-close-button">x</span>
+                            Your PIN code for Estonia (IK) or Finland (HETU); otherwise native ID or date of birth in the form YYMMDD
+                          </p>
+                        </label>
+                      </td>
+                      <td>
+                        <input type="text" id="code" name="code:cb!*-15" value="" size="15" maxlength="15">
+                      </td>
                     </tr>
                     <tr>
-                      <td><label for="country_code" id="l_country_code" style="font-style: italic;">Country</label>
-                        <img src="180915/pic/tip.gif" alt="" title="Selected Country determines the Code format"></td>
-                      <td><select id="country_code" name="country_code:cc*-2">
+                      <td>
+                        <label for="country_code" id="l_country_code">
+                          Country <i class="fa fa-info-circle open-country-info"></i>
+                          <p class="more-info country-info">
+                            <span class="tooltip-close-button">x</span>
+                            Selected Country determines the Code format
+                          </p>
+                        </label>
+                      </td>
+                      <td>
+                        <select id="country_code" name="country_code:cc*-2">
                           <option value="AU">Australia</option>
-          <option value="EE">Estonia</option>
-          <option value="FI">Finland</option>
-          <option value="DE">Germany</option>
-          <option value="GB">Great Britain</option>
-          <option value="LV">Latvia</option>
-          <option value="LT">Lithuania</option>
-          <option value="NO">Norway</option>
-          <option value="PL">Poland</option>
-          <option value="RU">Russia</option>
-          <option value="SE">Sweden</option>
-          <option value="UA">Ukraine</option>
-          <option value="US">United States</option>
-          <option value="" selected="selected"></option>
-                        </select></td>
+                          <option value="EE">Estonia</option>
+                          <option value="FI">Finland</option>
+                          <option value="DE">Germany</option>
+                          <option value="GB">Great Britain</option>
+                          <option value="LV">Latvia</option>
+                          <option value="LT">Lithuania</option>
+                          <option value="NO">Norway</option>
+                          <option value="PL">Poland</option>
+                          <option value="RU">Russia</option>
+                          <option value="SE">Sweden</option>
+                          <option value="UA">Ukraine</option>
+                          <option value="US">United States</option>
+                          <option value="" selected="selected"></option>
+                        </select>
+                      </td>
                     </tr>
                     <tr>
-                      <td><label for="email" id="l_email">Email</label>
-                        <img src="180915/pic/tip.gif" alt="" title="Please, specify an acting address for further confirmation of your registration"></td>
-                      <td><input type="text" id="email" name="email:cc!*-64" value="" size="30" maxlength="64"></td>
+                      <td>
+                        <label for="email" id="l_email">
+                          Email <i class="fa fa-info-circle open-email-info"></i>
+                          <p class="more-info email-info">
+                            <span class="tooltip-close-button">x</span>
+                            Please, specify an acting address for further confirmation of your registration
+                          </p>
+                        </label>
+                      </td>
+                      <td>
+                        <input type="text" id="email" name="email:cc!*-64" value="" size="30" maxlength="64">
+                      </td>
                     </tr>
                     <tr>
-                      <td><label for="phone" id="l_phone">Phone</label>
-                        <img src="180915/pic/tip.gif" alt="" title="Please without an area code if Country is specified; in case of the mobile number it will be used for SMS-notification"></td>
-                      <td><input type="text" id="phone" name="phone:cc!*-15" value="" size="15" maxlength="15"></td>
+                      <td>
+                        <label for="phone" id="l_phone">
+                          Phone <i class="fa fa-info-circle open-phone-info"></i>
+                          <p class="more-info phone-info">
+                            <span class="tooltip-close-button">x</span>
+                            Please without an area code if Country is specified; in case of the mobile number it will be used for SMS-notification
+                          </p>
+                        </label>
+                      </td>
+                      <td>
+                        <input type="text" id="phone" name="phone:cc!*-15" value="" size="15" maxlength="15">
+                      </td>
                     </tr>
                     <tr>
-                      <td><label for="note" id="l_note" style="font-style: italic;">Note</label></td>
-                      <td><input type="text" id="note" name="note:ca*-65535" value="" size="30" maxlength="65535"></td>
+                      <td>
+                        <label for="note" id="l_note" style="font-style: italic;">Note</label>
+                      </td>
+                      <td>
+                        <input type="text" id="note" name="note:ca*-65535" value="" size="30" maxlength="65535">
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -595,6 +638,31 @@
   </script>
 
   <script src="js/nav.js"></script>
+
+  <script>
+
+
+    $( '.open-pin-info' ).click(function() {
+      $('.pin-info').fadeIn();
+    });
+
+    $( '.open-country-info' ).click(function() {
+      $('.country-info').fadeIn();
+    });
+
+    $( '.open-email-info' ).click(function() {
+      $('.email-info').fadeIn();
+    });
+
+    $( '.open-phone-info' ).click(function() {
+      $('.phone-info').fadeIn();
+    });
+
+    $( '.tooltip-close-button' ).click(function() {
+      $('.more-info').fadeOut();
+    });
+
+  </script>
 </body>
 
 </html>

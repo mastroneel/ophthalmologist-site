@@ -223,7 +223,7 @@ button[name] {
 }
 
 #country_code {
-    width: 100%;
+  width: 100%;
 }
 
 select::-ms-expand {
@@ -232,6 +232,30 @@ select::-ms-expand {
 
 select:disabled::-ms-expand {
         display: none;
+}
+
+
+.more-info {
+  display: none;
+}
+
+.more-info {
+  position: absolute;
+  width: 150px;
+  font-size: 14px;
+  background-color: #fff;
+  padding: 10px;
+  border: 2px solid #5b7fe8;
+  margin-top: 0px;
+}
+
+.tooltip-close-button {
+  float: right;
+  font-family: 'Nunito';
+  font-weight: 700;
+  color: #5b7fe8;
+  font-size: 25px;
+  margin-top: -10px;
 }
 
 
@@ -387,7 +411,7 @@ select:disabled::-ms-expand {
   input {
     width: 160px;
   }
-  select {
+  select, #country_code {
     width: 166px;
   }
 }
