@@ -748,6 +748,9 @@ button[name] {
 select::-ms-expand {
   display: none; }
 
+select:disabled::-ms-expand {
+  display: none; }
+
 @media (max-width: 940px) {
   #shell .calendar .change thead th,
   #shell .calendar .change tfoot th {
