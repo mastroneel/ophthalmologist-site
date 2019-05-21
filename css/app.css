@@ -179,30 +179,38 @@ header {
           color: #5b7fe8;
           text-decoration: underline;
           transition: 0.2s; }
+  .main-nav a.dropdown-toggle {
+    position: relative !important; }
   .main-nav .dropdown-menu {
     margin-top: 20px;
     background-color: #5b7fe8;
     position: absolute;
-    right: 400px;
-    top: 120px;
+    top: 110px;
     width: 120px;
     height: 80px;
     line-height: 80px;
     text-align: center;
     opacity: 0; }
-    .main-nav .dropdown-menu li a {
-      font-family: "Avenir Black", "Avenir", sans-serif;
-      color: #fff; }
-      .main-nav .dropdown-menu li a:hover {
+    .main-nav .dropdown-menu li {
+      margin: 0; }
+      .main-nav .dropdown-menu li a {
+        font-family: "Avenir Black", "Avenir", sans-serif;
+        font-size: 13px;
         color: #fff; }
-      .main-nav .dropdown-menu li a.active {
-        color: #fff; }
+        .main-nav .dropdown-menu li a:hover {
+          color: #fff; }
+        .main-nav .dropdown-menu li a.active {
+          color: #fff; }
 
-@media (max-width: 850px) {
+@media (max-width: 1005px) {
   .main-nav ul li {
     margin: 0 10px; }
+    .main-nav ul li a {
+      font-size: 14px; }
   .main-nav .dropdown-menu {
-    right: 355px; } }
+    right: 355px; }
+    .main-nav .dropdown-menu li {
+      margin: 0; } }
 @media (min-width: 768px) {
   header, .mobile-nav-wrap {
     display: none; } }
@@ -414,7 +422,7 @@ footer {
     font-size: 30px; } }
 .about-content {
   width: 100%;
-  max-width: 1000px;
+  max-width: 800px;
   margin: 80px auto; }
   .about-content .col-xs-12, .about-content .col-sm-6 {
     padding: 0;
@@ -557,6 +565,34 @@ footer {
   padding: 20px;
   position: relative; }
 
+#mbx {
+  color: #5b7fe8;
+  font-family: 'Avenir';
+  font-weight: bold;
+  padding: 15px;
+  border: 3px solid #5b7fe8;
+  font-size: 14px;
+  background-color: #fff; }
+
+.mbe {
+  visibility: hidden; }
+
+#l_mbp {
+  background-color: #fff; }
+
+#mbx button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: #5b7fe8;
+  font-family: 'Avenir';
+  font-weight: bold;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 10px 5px; }
+
 .msgraw {
   font-family: "Avenir Black", "Avenir", sans-serif;
   color: #5b7fe8;
@@ -580,6 +616,7 @@ footer {
 
 input {
   font-size: 16px;
+  padding-left: 5px;
   border: 2px solid #262626;
   height: 40px;
   border-radius: 2px;
@@ -687,10 +724,13 @@ button[name] {
   font-weight: 700;
   text-align: center;
   color: #5b7fe8;
-  padding: 5px; }
+  padding: 5px;
+  font-size: 15px; }
 
 .toolt .stims div {
-  display: inline; }
+  display: inline;
+  font-size: 15px;
+  line-height: 1.5; }
 
 .toolt span {
   margin-right: 0.2em; }
@@ -701,6 +741,12 @@ button[name] {
   border-bottom: 10px solid #ddd !important;
   border-left: 15px solid #ddd !important;
   border-right: 15px solid #ddd !important; }
+
+#country_code {
+  width: 100%; }
+
+select::-ms-expand {
+  display: none; }
 
 @media (max-width: 940px) {
   #shell .calendar .change thead th,
